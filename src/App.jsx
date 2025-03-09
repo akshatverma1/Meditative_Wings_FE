@@ -5,6 +5,7 @@ import CategoryPage from "./pages/CategoryPage"
 import AboutPage from "./pages/AboutPage"
 import ContactPage from "./pages/ContactPage"
 import ExplorePage from "./pages/ExplorePage"
+// import  Categories from "./components/Categories.jsx"
 import { ThemeProvider } from "./components/ThemeProvider"
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/post/:id" element={<PostPage />} />
+          {/* <Route path="/category" element={<Categories></Categories> } /> */}
           <Route path="/category/:id" element={<CategoryPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />

@@ -20,7 +20,7 @@ function HomePage() {
         </section>
 
         <Categories />
-        <BlogGrid />
+        {/* <BlogGrid /> */}
       </main>
       <Footer />
     </div>

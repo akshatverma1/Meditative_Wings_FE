@@ -18,7 +18,7 @@ export function Header() {
             <div className="rounded-full bg-primary p-1">
               <PenTool className="h-6 w-6 text-white" />
             </div>
-            <span className="text-xl font-bold">MeditativeBlogs</span>
+            <span className="text-xl font-bold">Meditative Wings</span>
           </Link>
         </div>
 
@@ -81,7 +81,7 @@ export function Header() {
       </div>
 
       {isMobile && mobileMenuOpen && (
-        <div className="fixed inset-x-0 top-16 z-50 mt-px bg-background pb-6 shadow-lg">
+        <div style={{backgroundColor:"black"}} className="fixed inset-x-0 top-16 z-50 mt-px bg-background pb-6 shadow-lg">
           <div className="mx-auto max-w-7xl px-6">
             <div className="grid gap-3 py-6">
               <form className="relative mb-4">

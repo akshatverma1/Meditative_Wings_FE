@@ -1,62 +1,62 @@
 import { Link } from "react-router-dom"
 import { ArrowRight } from "lucide-react"
 import { Button } from "./ui/Button"
-
+import Placeholder from "./placeholder.svg"
 const categories = [
   {
     id: 1,
     title: "MEDITATIVE KNOWLEDGE",
     description: "Explore ancient and modern wisdom on meditation practices",
-    image: "/placeholder.svg",
+    image: Placeholder,
     color: "from-purple-600 to-indigo-600",
   },
   {
     id: 2,
     title: "MEDITATIVE THOUGHTS/IDEAS",
     description: "Insights and reflections to inspire your meditation journey",
-    image: "/placeholder.svg",
+    image: Placeholder,
     color: "from-pink-500 to-purple-600",
   },
   {
     id: 3,
     title: "MEDITATIVE MOVIE/FILM",
     description: "Films and documentaries that promote mindfulness",
-    image: "/placeholder.svg",
+    image: Placeholder,
     color: "from-blue-500 to-indigo-600",
   },
   {
     id: 4,
     title: "MEDITATIVE WRITINGS",
     description: "Essays and articles on meditation and mindfulness",
-    image: "/placeholder.svg",
+    image: Placeholder,
     color: "from-violet-600 to-purple-600",
   },
   {
     id: 5,
     title: "LIFE UNDERSTANDING MOVIE/FILM",
     description: "Films that offer profound insights into the human experience",
-    image: "/placeholder.svg",
+    image: Placeholder,
     color: "from-cyan-500 to-blue-600",
   },
   {
     id: 6,
     title: "MEDITATIVE SHAYARI (hindi)",
     description: "Poetic expressions of mindfulness in Hindi",
-    image: "/placeholder.svg",
+    image: Placeholder,
     color: "from-rose-500 to-pink-600",
   },
   {
     id: 7,
     title: "MEDITATIVE SHAYARI MOVIE/FILM",
     description: "Films featuring poetic meditative expressions",
-    image: "/placeholder.svg",
+    image: Placeholder,
     color: "from-amber-500 to-orange-600",
   },
   {
     id: 8,
     title: "MEDITATIVE SHAYARI WRITINGS",
     description: "Written works of meditative poetry and expression",
-    image: "/placeholder.svg",
+    image: Placeholder,
     color: "from-emerald-500 to-green-600",
   },
 ]
@@ -66,9 +66,9 @@ export function Categories() {
     <section className="py-12 px-4 md:px-6 max-w-7xl mx-auto">
       <div className="flex justify-between items-center mb-8">
         <h2 className="text-3xl font-bold">All Categories</h2>
-        <Link to="/categories" className="text-primary hover:underline">
+        {/* <Link to="/categories" className="text-primary hover:underline">
           View all
-        </Link>
+        </Link> */}
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
