@@ -1,10 +1,11 @@
 "use client"
 
 import { useState } from "react"
-import Link from "next/link"
+// import Link from "next/link"
+import Link from "react-router-dom"
 import { Search, Menu, X, PenTool, Home, BookOpen, Users, MessageCircle } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { useMediaQuery } from "@/hooks/use-media-query"
+import { Button } from "../ui/button"
+import { useMediaQuery } from "../hooks/use-media-query"
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
