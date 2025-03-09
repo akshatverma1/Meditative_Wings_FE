@@ -69,9 +69,9 @@ function CategoryPage() {
           </div>
         </section>
 
-        <BlogGrid categoryId={id} />
+        {/* <BlogGrid categoryId={id} /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

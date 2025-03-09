@@ -6,6 +6,16 @@ import AboutPage from "./pages/AboutPage"
 import ContactPage from "./pages/ContactPage"
 import ExplorePage from "./pages/ExplorePage"
 // import  Categories from "./components/Categories.jsx"
+
+import M1 from "./categories/M1.jsx"
+import M2 from "./categories/M2.jsx"
+import M3 from "./categories/M3.jsx"
+import M4 from "./categories/M4.jsx"
+import M5 from "./categories/M5.jsx"
+import M6 from "./categories/M6.jsx"
+import M7 from "./categories/M7.jsx"
+import M8 from "./categories/M8.jsx"  
+import Cate_main from "./categories/cate_main.jsx"
 import { ThemeProvider } from "./components/ThemeProvider"
 
 function App() {
@@ -20,6 +30,15 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/explore" element={<ExplorePage />} />
+          <Route path="/category/M1" element={<M1 />} />
+          <Route path="/category/M2" element={<M2 />} />
+          <Route path="/category/M3" element={<M3 />} />
+          <Route path="/category/M4" element={<M4 />} />
+          <Route path="/category/M5" element={<M5 />} />
+          <Route path="/category/M6" element={<M6 />} />
+          <Route path="/category/M7" element={<M7 />} />
+          <Route path="/category/M8" element={<M8 />} />
+          <Route path="/categorym" element={<Cate_main />} />
         </Routes>
       </div>
     </ThemeProvider>

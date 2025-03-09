@@ -5,6 +5,8 @@ import { Link } from "react-router-dom"
 import { Search, Menu, X, PenTool, Home, BookOpen, Users, MessageCircle } from "lucide-react"
 import { Button } from "./ui/Button"
 import { useMediaQuery } from "../hooks/useMediaQuery"
+import Medi_icon from "./../../public/meditative_icon.jpg"
+
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -15,9 +17,7 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-6">
         <div className="flex items-center gap-2">
           <Link to="/" className="flex items-center gap-2">
-            <div className="rounded-full bg-primary p-1">
-              <PenTool className="h-6 w-6 text-white" />
-            </div>
+            <img src={Medi_icon} alt="Meditative Wings" className="h-8 w-8 rounded-full" />
             <span className="text-xl font-bold">Meditative Wings</span>
           </Link>
         </div>

@@ -12,28 +12,29 @@ export function Footer() {
             <div className="rounded-full bg-primary p-1">
               <PenTool className="h-5 w-5 text-white" />
             </div>
-            <span className="text-lg font-bold">MeditativeBlogs</span>
+            <span className="text-lg font-bold">Meditative Wings</span>
           </Link>
           <p className="text-muted-foreground mb-6">
             A community dedicated to sharing meditative knowledge, thoughts, and creative expressions.
           </p>
           <div className="flex gap-4">
-            <a href="https://twitter.com" className="text-muted-foreground hover:text-primary">
+            {/* <a href="https://twitter.com" className="text-muted-foreground hover:text-primary">
               <Twitter className="h-5 w-5" />
               <span className="sr-only">Twitter</span>
-            </a>
+            </a> */}
             <a href="https://github.com" className="text-muted-foreground hover:text-primary">
-              <Github className="h-5 w-5" />
-              <span className="sr-only">GitHub</span>
+              {/* <Github className="h-5 w-5" /> */}
+              <i class="fa-brands fa-youtube"></i>
+              <span className="sr-only">Youtube</span>
             </a>
             <a href="https://linkedin.com" className="text-muted-foreground hover:text-primary">
-              <Linkedin className="h-5 w-5" />
-              <span className="sr-only">LinkedIn</span>
+            <i class="fa-brands fa-instagram"></i>
+              <span className="sr-only">Instagram</span>
             </a>
-            <Link to="/rss" className="text-muted-foreground hover:text-primary">
+            {/* <Link to="/rss" className="text-muted-foreground hover:text-primary">
               <Rss className="h-5 w-5" />
               <span className="sr-only">RSS Feed</span>
-            </Link>
+            </Link> */}
           </div>
         </div>
 
