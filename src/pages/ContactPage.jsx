@@ -30,7 +30,8 @@ function ContactPage() {
                   <Mail className="h-6 w-6 text-primary mt-0.5" />
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="text-muted-foreground">contact@meditativeblogs.com</p>
+                    <p className="text-muted-foreground">meditativewings@gmail.com</p>
+                    {/* <p className="text-muted-foreground"> ramchandrashiv8@gmail.com</p> */}
                   </div>
                 </div>
 
@@ -38,7 +39,7 @@ function ContactPage() {
                   <Phone className="h-6 w-6 text-primary mt-0.5" />
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                    <p className="text-muted-foreground">+91-9597381588</p>
                   </div>
                 </div>
 
@@ -47,11 +48,11 @@ function ContactPage() {
                   <div>
                     <h3 className="font-semibold">Address</h3>
                     <p className="text-muted-foreground">
-                      123 Meditation Lane
+                    6h/76,Bahadurpur Housing Colony
                       <br />
-                      Mindful City, MC 12345
+                      Bhootnath,Kankarbagh
                       <br />
-                      United States
+                      Patna-800026
                     </p>
                   </div>
                 </div>
