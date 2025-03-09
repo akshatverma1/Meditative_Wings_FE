@@ -1,11 +1,11 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
-import { BlogGrid } from "@/components/blog-grid"
-import { Categories } from "@/components/categories"
-import { Stars } from "@/components/stars"
+import { Header } from "./innerPages/header.jsx"
+import { Footer } from "./innerPages/footer.jsx"
+// import { BlogGrid } from "@/components/blog-grid"
+import { Categories } from "./innerPages/categories.jsx"
+import { Stars } from "./innerPages/stars.jsx"
 
 export default function Home() {
   const [mounted, setMounted] = useState(false)
@@ -33,7 +33,7 @@ export default function Home() {
         </section>
 
         <Categories />
-        <BlogGrid />
+        {/* <BlogGrid /> */}
       </main>
       <Footer />
     </div>

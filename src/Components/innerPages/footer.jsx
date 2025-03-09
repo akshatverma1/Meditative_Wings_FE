@@ -1,7 +1,8 @@
-import Link from "next/link"
+// import Link from "next/link"
+import Link from "react-router-dom"
 import { PenTool, Twitter, Github, Linkedin, Rss } from "lucide-react"
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
+import { Input } from "../ui/input"
+import { Button } from "../ui/button"
 
 export function Footer() {
   return (

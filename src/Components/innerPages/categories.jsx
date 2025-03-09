@@ -1,7 +1,9 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+// import Image from "next/image"
+// import Link from "next/link"
+import Image from "react-image"
+import { Link } from "react-router-dom"
+import { Card, CardContent } from "../ui/card"
+import { Button } from "../ui/button"
 import { ArrowRight } from "lucide-react"
 
 const categories = [
