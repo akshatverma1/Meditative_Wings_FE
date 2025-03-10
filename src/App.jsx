@@ -16,6 +16,7 @@ import M6 from "./categories/M6.jsx"
 import M7 from "./categories/M7.jsx"
 import M8 from "./categories/M8.jsx"  
 import Cate_main from "./categories/cate_main.jsx"
+import FormData from "./categories/Form.jsx"
 import { ThemeProvider } from "./components/ThemeProvider"
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <Route path="/category/M7" element={<M7 />} />
           <Route path="/category/M8" element={<M8 />} />
           <Route path="/categorym" element={<Cate_main />} />
+          <Route path="/form" element={<FormData></FormData>}></Route>
         </Routes>
       </div>
     </ThemeProvider>
