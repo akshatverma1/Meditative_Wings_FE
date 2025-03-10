@@ -7,16 +7,26 @@ export default function Date_Form() {
 
 
 
-                <input name="videoTitle" id="videoTitle" placeholder="videoTitle" type='text' />
+                <input style={{ color: "black" }} name="videoTitle" id="videoTitle" placeholder="videoTitle" type='text' />
                 <br></br>
-                <input name="videoDesp" id="videoDesp" placeholder="videoDesp" text="text"/>
+                <input style={{ color: "black" }} name="videoDesp" id="videoDesp" placeholder="videoDesp" text="text" />
                 <br></br>
-                <input name="thumbnailLink" id="thumbnailLink" placeholder="thumbnailLink" text="text" />
+                <input style={{ color: "black" }} name="thumbnailLink" id="thumbnailLink" placeholder="thumbnailLink" text="text" />
                 <br></br>
-                <input name="youtubeLink" id="youtubeLink" placeholder="youtubeLink" text="text"/>
+                <input style={{ color: "black" }} name="youtubeLink" id="youtubeLink" placeholder="youtubeLink" text="text" />
                 <br></br>
-                <input name="category" id="category" placeholder="category" text="text"/>
+                {/* <input style={{ color: "black" }} name="category" id="category" placeholder="category" text="text" /> */}
                 <br></br>
+                <select name="category" style={{color:"black"}} id="fruits">
+                    <option value="Meditative Knowledge">Meditative Knowledge</option>
+                    <option value="Meditative Thoughts">Meditative Thoughts</option>
+                    <option value="Meditative Movie">Meditative Movie</option>
+                    <option value="Meditative Writings">Meditative Writings</option>
+                    <option value="Life Understanding">Life Understanding</option>
+                    <option value="Meditative Shayari">Meditative Shayari</option>
+                    <option value=">Meditative Shayari Movie">Meditative Shayari Movie</option>
+                    <option value="Meditative Shayari Writings">Meditative Shayari Writings</option>
+                </select>
                 <button>Submit</button>
             </form>
         </>
