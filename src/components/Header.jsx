@@ -27,12 +27,12 @@ export function Header() {
             <Link to="/" className="text-sm font-medium transition-colors hover:text-primary">
               Home
             </Link>
-            <Link
+            {/* <Link
               to="/explore"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
             >
               Explore
-            </Link>
+            </Link> */}
             <Link
               to="/about"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
