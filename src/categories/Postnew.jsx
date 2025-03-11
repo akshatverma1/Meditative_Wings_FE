@@ -7,23 +7,8 @@ import { Badge } from "./../components/ui/Badge.jsx"
 import { Header } from "../components/Header.jsx"
 import { Footer } from "../components/Footer.jsx"
 // Sample JSON data - in a real app, this would be fetched from an API
-let url = "http://localhost:3000/allcategories";
-    const [data, setData] = useState([]);
 
-    useEffect(() => {
-        const apiCalling = async () => {
-            try {
-                const response = await fetch(url);
-                const apidata = await response.json();
-                setData(apidata);
-                console.log(apidata);
-            } catch (error) {
-                console.error("Error fetching data:", error);
-            }
-        };
-        apiCalling();
-    }, []);
-    
+
 const sampleData = [
     {
         id: 1,
@@ -87,6 +72,22 @@ export default function Akshat({ data = sampleData, title = "Featured Meditation
     // Filter featured videos if needed
     const featuredVideos = videos.filter((video) => video.featured)
 
+    let url = "http://localhost:3000/meditativeKnowledge";
+    const [apidata, apisetData] = useState([]);
+
+    useEffect(() => {
+        const apiCalling = async () => {
+            try {
+                const response = await fetch(url);
+                const oneapidata = await response.json();
+                apisetData(oneapidata);
+                // console.log(oneapidata);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        };
+        apiCalling();
+    }, []);
     return (
         <>
             <Header></Header>
@@ -98,7 +99,7 @@ export default function Akshat({ data = sampleData, title = "Featured Meditation
                     </h2>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {featuredVideos.map((video) => (
+                        {apidata.map((video) => (
                             <div
                                 key={video.id}
                                 className="group relative bg-card/40 border border-border/50 rounded-lg overflow-hidden backdrop-blur transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1"
@@ -107,34 +108,14 @@ export default function Akshat({ data = sampleData, title = "Featured Meditation
                             >
                                 <div className="relative aspect-video w-full overflow-hidden">
                                     <img
-                                        src="https://i.pinimg.com/736x/62/d0/07/62d007c1c1edfb96cef8afc9ed765909.jpg"
-                                        alt={video.title}
+                                        src={video.thumbnailLink}
+                                        alt={video.videoTitle}
                                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                                     />
 
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-70"></div>
 
-                                    {/* <Badge className="absolute top-3 left-3 bg-primary text-primary-foreground">{video.category}</Badge> */}
 
-                                    {/* <div className="absolute bottom-3 left-3 flex items-center gap-3 text-xs text-white">
-                  <div className="flex items-center gap-1">
-                    <Clock className="h-3 w-3" />
-                    <span>{video.duration}</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <Eye className="h-3 w-3" />
-                    <span>{video.views.toLocaleString()}</span>
-                  </div>
-                </div> */}
-
-                                    {/* <Button
-                  variant="ghost"
-                  size="icon"
-                  className="absolute top-3 right-3 h-8 w-8 bg-black/20 backdrop-blur hover:bg-black/40"
-                >
-                  <BookmarkPlus className="h-4 w-4" />
-                  <span className="sr-only">Save video</span>
-                </Button> */}
 
                                     {hoveredId === video.id && (
                                         <div className="absolute inset-0 flex items-center justify-center bg-black/40 transition-opacity duration-300">
@@ -152,12 +133,12 @@ export default function Akshat({ data = sampleData, title = "Featured Meditation
 
                                 <div className="p-4">
                                     <h3 className="font-bold text-lg mb-2 line-clamp-1 group-hover:text-primary transition-colors">
-                                        {video.title}
+                                        {video.videoTitle}
                                     </h3>
-                                    <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{video.description}</p>
+                                    <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{video.videoDesp}</p>
                                     <Button
                                         className="w-full gap-2 bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90"
-                                        onClick={() => window.open(video.videoUrl, "_blank")}
+                                        onClick={() => window.open(video.youtubeLink, "_blank")}
                                     >
                                         <ExternalLink className="h-4 w-4" />
                                         Watch Now

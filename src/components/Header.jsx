@@ -62,9 +62,11 @@ export function Header() {
 
           {!isMobile ? (
             <>
+            <form method = "get" action = "http://localhost:5173/newRequestPost">
               <Button variant="ghost" size="sm">
                 Sign In
               </Button>
+              </form>
               <Button size="sm">Get Started</Button>
             </>
           ) : (
