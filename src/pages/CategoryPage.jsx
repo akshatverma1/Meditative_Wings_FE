@@ -10,41 +10,49 @@ const categoryData = {
     title: "MEDITATIVE KNOWLEDGE",
     description: "Explore ancient and modern wisdom on meditation practices",
     color: "from-purple-600 to-indigo-600",
+    backend_api : "http://localhost:3000/meditativeKnowledge"
   },
   2: {
     title: "MEDITATIVE THOUGHTS/IDEAS",
     description: "Insights and reflections to inspire your meditation journey",
     color: "from-pink-500 to-purple-600",
+    backend_api : "http://localhost:3000/meditativeThoughts"
   },
   3: {
     title: "MEDITATIVE MOVIE/FILM",
     description: "Films and documentaries that promote mindfulness",
     color: "from-blue-500 to-indigo-600",
+    backend_api : "http://localhost:3000/meditativeMovie"
   },
   4: {
     title: "MEDITATIVE WRITINGS",
     description: "Essays and articles on meditation and mindfulness",
     color: "from-violet-600 to-purple-600",
+    backend_api : "http://localhost:3000/meditativeWritings"
   },
   5: {
     title: "LIFE UNDERSTANDING MOVIE/FILM",
     description: "Films that offer profound insights into the human experience",
     color: "from-cyan-500 to-blue-600",
+    backend_api : "http://localhost:3000/lifeUnderstanding"
   },
   6: {
     title: "MEDITATIVE SHAYARI (hindi)",
     description: "Poetic expressions of mindfulness in Hindi",
     color: "from-rose-500 to-pink-600",
+    backend_api : "http://localhost:3000/meditativeShayari"
   },
   7: {
     title: "MEDITATIVE SHAYARI MOVIE/FILM",
     description: "Films featuring poetic meditative expressions",
     color: "from-amber-500 to-orange-600",
+    backend_api : "http://localhost:3000/meditativeShayariMovie"
   },
   8: {
     title: "MEDITATIVE SHAYARI WRITINGS",
     description: "Written works of meditative poetry and expression",
     color: "from-emerald-500 to-green-600",
+    backend_api : "http://localhost:3000/meditativeShayariWritings"
   },
 }
 

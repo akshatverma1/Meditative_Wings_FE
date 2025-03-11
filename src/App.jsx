@@ -18,6 +18,7 @@ import M8 from "./categories/M8.jsx"
 import Cate_main from "./categories/cate_main.jsx"
 import FormData from "./categories/Form.jsx"
 import  NewPostForm  from "./categories/NewRequest.jsx"
+import Newpost from "./categories/Postnew.jsx";
 import { ThemeProvider } from "./components/ThemeProvider"
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
           <Route path="/categorym" element={<Cate_main />} />
           <Route path="/form" element={<FormData></FormData>}></Route>
           <Route path="/newRequestPost" element={<NewPostForm></NewPostForm>}></Route>
+          <Route path="/newpost" element={<Newpost></Newpost>}></Route>
         </Routes>
       </div>
     </ThemeProvider>
