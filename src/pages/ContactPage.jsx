@@ -60,7 +60,7 @@ function ContactPage() {
             </div>
 
             <div>
-              <form action="https://meditative-wings-fe-brown.vercel.app/contact" method="get"   className="space-y-6">
+              <form action="https://meditative-wings-fe-brown.vercel.app/" method="get"   className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium">
