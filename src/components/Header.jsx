@@ -48,8 +48,8 @@ export function Header() {
           </nav>
         )}
 
-        {/* <div className="flex items-center gap-4">
-          {!isMobile && (
+        <div className="flex items-center gap-4">
+          {/* {!isMobile && (
             <form className="relative">
               <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
               <input
