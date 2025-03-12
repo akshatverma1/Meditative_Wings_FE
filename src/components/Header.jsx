@@ -62,7 +62,7 @@ export function Header() {
 
           {!isMobile ? (
             <>
-            <form method = "get" action = "/newRequestPost">
+            <form action = "/newRequestPost">
               <Button variant="ghost" size="sm">
                 Sign In
               </Button>
@@ -104,14 +104,14 @@ export function Header() {
                 <Home className="h-4 w-4" />
                 Home
               </Link>
-              <Link
+              {/* <Link
                 to="/explore"
                 className="flex items-center gap-2 px-3 py-2 text-muted-foreground hover:text-foreground"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <BookOpen className="h-4 w-4" />
                 Explore
-              </Link>
+              </Link> */}
               <Link
                 to="/about"
                 className="flex items-center gap-2 px-3 py-2 text-muted-foreground hover:text-foreground"
@@ -128,7 +128,7 @@ export function Header() {
                 <MessageCircle className="h-4 w-4" />
                 Contact
               </Link>
-              <div className="border-t border-border/40 pt-5 mt-2">
+              {/* <div className="border-t border-border/40 pt-5 mt-2">
                 <div className="flex gap-3">
                   <Button className="w-full" size="sm">
                     Get Started
@@ -137,7 +137,7 @@ export function Header() {
                     Sign In
                   </Button>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
