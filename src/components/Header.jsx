@@ -62,11 +62,13 @@ export function Header() {
 
           {!isMobile ? (
             <>
-            <form action = "/newRequestPost">
+            {/* <form action = "/newRequestPost"> */}
+            <Link to={"/newRequestPost"}>
               <Button variant="ghost" size="sm">
                 Sign In
               </Button>
-              </form>
+              </Link>
+              {/* </form> */}
               <form action="https://www.youtube.com/@MEDITATIVEWINGSWORLD" method="get">
               <Button size="sm">Youtube</Button>
               </form>
