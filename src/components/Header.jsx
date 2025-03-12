@@ -48,7 +48,7 @@ export function Header() {
           </nav>
         )}
 
-        <div className="flex items-center gap-4">
+        {/* <div className="flex items-center gap-4">
           {!isMobile && (
             <form className="relative">
               <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
@@ -58,16 +58,16 @@ export function Header() {
                 className="rounded-full border border-input bg-background px-10 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 w-[200px] lg:w-[300px]"
               />
             </form>
-          )}
+          )} */}
 
           {!isMobile ? (
             <>
             {/* <form action = "/newRequestPost"> */}
-            <Link to={"/newRequestPost"}>
+            {/* <Link to={"/newRequestPost"}>
               <Button variant="ghost" size="sm">
                 Sign In
               </Button>
-              </Link>
+              </Link> */}
               {/* </form> */}
               <form action="https://www.youtube.com/@MEDITATIVEWINGSWORLD" method="get">
               <Button size="sm">Youtube</Button>
