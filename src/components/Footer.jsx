@@ -28,7 +28,7 @@ export function Footer() {
               <span className="sr-only">Youtube</span>
             </a>
             <a href="https://linkedin.com" className="text-muted-foreground hover:text-primary">
-            <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-instagram"></i>
               <span className="sr-only">Instagram</span>
             </a>
             {/* <Link to="/rss" className="text-muted-foreground hover:text-primary">
@@ -97,9 +97,14 @@ export function Footer() {
                 Meditative Shayari
               </Link>
             </li>
+            <li>
+              <Link to="/newRequestPost" className="text-muted-foreground hover:text-foreground">
+                New Post
+              </Link>
+            </li>
           </ul>
         </div>
-{/* 
+        {/* 
         <div>
           <h3 className="font-semibold mb-4">Subscribe to Newsletter</h3>
           <p className="text-muted-foreground mb-4">Get the latest meditative content directly to your inbox.</p>
