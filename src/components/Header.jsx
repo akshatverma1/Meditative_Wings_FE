@@ -62,11 +62,11 @@ export function Header() {
 
           {!isMobile ? (
             <>
-            {/* <form method = "get" action = "http://localhost:5173/newRequestPost">
+            <form method = "get" action = "/newRequestPost">
               <Button variant="ghost" size="sm">
                 Sign In
               </Button>
-              </form> */}
+              </form>
               <form action="https://www.youtube.com/@MEDITATIVEWINGSWORLD" method="get">
               <Button size="sm">Youtube</Button>
               </form>
@@ -85,7 +85,7 @@ export function Header() {
       </div>
 
       {isMobile && mobileMenuOpen && (
-        <div style={{backgroundColor:"black"}} className="fixed inset-x-0 top-16 z-50 mt-px bg-background pb-6 shadow-lg">
+        <div style={{backgroundColor:"black"}} className="">
           <div className="mx-auto max-w-7xl px-6">
             <div className="grid gap-3 py-6">
               <form className="relative mb-4">
