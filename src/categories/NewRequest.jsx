@@ -11,7 +11,7 @@ export default function NewPostForm() {
 
     return (
         <div className="bg-card/40 border border-border/50 backdrop-blur rounded-lg p-6 md:p-8">
-
+{/* Backend */}
 
             <form action="https://meditative-wings-backend-seven.vercel.app/newRequest" method='post' className="space-y-6">
                 <div className="space-y-2">
@@ -23,8 +23,6 @@ export default function NewPostForm() {
                         id="videoTitle"
                         name="videoTitle"
                         placeholder="Enter the title of your content"
-
-
                     />
 
                 </div>
