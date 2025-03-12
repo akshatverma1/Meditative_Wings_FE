@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import { ArrowRight } from "lucide-react"
 import { Button } from "./ui/Button"
 import Placeholder from "./placeholder.svg"
+import Postnew from "./../categories/Postnew.jsx"
 const categories = [
   {
     id: 1,
@@ -9,6 +10,7 @@ const categories = [
     description: "Explore ancient and modern wisdom on meditation practices",
     image: Placeholder,
     color: "from-purple-600 to-indigo-600",
+    apiUrl :"http://localhost:3000/meditativeKnowledge"
   },
   {
     id: 2,
@@ -16,6 +18,7 @@ const categories = [
     description: "Insights and reflections to inspire your meditation journey",
     image: Placeholder,
     color: "from-pink-500 to-purple-600",
+    apiUrl :"http://localhost:3000/meditativeKnowledge"
   },
   {
     id: 3,
@@ -23,6 +26,7 @@ const categories = [
     description: "Films and documentaries that promote mindfulness",
     image: Placeholder,
     color: "from-blue-500 to-indigo-600",
+    apiUrl :"http://localhost:3000/meditativeKnowledge"
   },
   {
     id: 4,
@@ -30,6 +34,7 @@ const categories = [
     description: "Essays and articles on meditation and mindfulness",
     image: Placeholder,
     color: "from-violet-600 to-purple-600",
+    apiUrl :"http://localhost:3000/meditativeKnowledge"
   },
   {
     id: 5,
@@ -37,6 +42,7 @@ const categories = [
     description: "Films that offer profound insights into the human experience",
     image: Placeholder,
     color: "from-cyan-500 to-blue-600",
+    apiUrl :"http://localhost:3000/meditativeKnowledge"
   },
   {
     id: 6,
@@ -44,6 +50,7 @@ const categories = [
     description: "Poetic expressions of mindfulness in Hindi",
     image: Placeholder,
     color: "from-rose-500 to-pink-600",
+    apiUrl :"http://localhost:3000/meditativeKnowledge"
   },
   {
     id: 7,
@@ -51,6 +58,7 @@ const categories = [
     description: "Films featuring poetic meditative expressions",
     image: Placeholder,
     color: "from-amber-500 to-orange-600",
+    apiUrl :"http://localhost:3000/meditativeKnowledge"
   },
   {
     id: 8,
@@ -58,6 +66,7 @@ const categories = [
     description: "Written works of meditative poetry and expression",
     image: Placeholder,
     color: "from-emerald-500 to-green-600",
+    apiUrl :"http://localhost:3000/meditativeKnowledge"
   },
 ]
 
@@ -89,7 +98,7 @@ export function Categories() {
               <h3 className="font-bold text-lg mb-2 line-clamp-1">{category.title}</h3>
               <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{category.description}</p>
               <Button variant="outline" size="sm" className="w-full group">
-                <Link to={`/category/${category.id}`} className="flex items-center justify-center w-full">
+                <Link to={`/category/${category.id}/`} className="flex items-center justify-center w-full">
                   <span>Open</span>
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Link>

@@ -46,11 +46,11 @@ export function Footer() {
                 Home
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/explore" className="text-muted-foreground hover:text-foreground">
                 Explore
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/about" className="text-muted-foreground hover:text-foreground">
                 About
@@ -61,11 +61,11 @@ export function Footer() {
                 Contact
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/write" className="text-muted-foreground hover:text-foreground">
                 Write a Post
               </Link>
-            </li>
+            </li> */}
           </ul>
         </div>
 
@@ -99,7 +99,7 @@ export function Footer() {
             </li>
           </ul>
         </div>
-
+{/* 
         <div>
           <h3 className="font-semibold mb-4">Subscribe to Newsletter</h3>
           <p className="text-muted-foreground mb-4">Get the latest meditative content directly to your inbox.</p>
@@ -107,11 +107,11 @@ export function Footer() {
             <Input type="email" placeholder="Enter your email" className="bg-secondary" />
             <Button className="w-full">Subscribe</Button>
           </form>
-        </div>
+        </div> */}
       </div>
 
       <div className="border-t border-border/40 mt-12 pt-6 text-center text-sm text-muted-foreground">
-        <p>© {new Date().getFullYear()} MeditativeBlogs. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Meditative Wings. All rights reserved.</p>
       </div>
     </footer>
   )

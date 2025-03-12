@@ -4,55 +4,64 @@ import { Header } from "../components/Header"
 import { Footer } from "../components/Footer"
 import { Stars } from "../components/Stars"
 import { BlogGrid } from "../components/BlogGrid"
+import Postnew from "./../categories/Postnew.jsx"
 
 const categoryData = {
   1: {
     title: "MEDITATIVE KNOWLEDGE",
     description: "Explore ancient and modern wisdom on meditation practices",
     color: "from-purple-600 to-indigo-600",
-    backend_api : "http://localhost:3000/meditativeKnowledge"
+    backend_api : "http://localhost:3000/meditativeKnowledge",
+    apiUrl :"https://meditative-wings-backend-seven.vercel.app/meditativeKnowledge"
   },
   2: {
     title: "MEDITATIVE THOUGHTS/IDEAS",
     description: "Insights and reflections to inspire your meditation journey",
     color: "from-pink-500 to-purple-600",
-    backend_api : "http://localhost:3000/meditativeThoughts"
+    backend_api : "http://localhost:3000/meditativeThoughts",
+    apiUrl :"https://meditative-wings-backend-seven.vercel.app/meditativeThoughts"
   },
   3: {
     title: "MEDITATIVE MOVIE/FILM",
     description: "Films and documentaries that promote mindfulness",
     color: "from-blue-500 to-indigo-600",
-    backend_api : "http://localhost:3000/meditativeMovie"
+    backend_api : "http://localhost:3000/meditativeMovie",
+    apiUrl :"https://meditative-wings-backend-seven.vercel.app/meditativeMovie"
   },
   4: {
     title: "MEDITATIVE WRITINGS",
     description: "Essays and articles on meditation and mindfulness",
     color: "from-violet-600 to-purple-600",
-    backend_api : "http://localhost:3000/meditativeWritings"
+    backend_api : "http://localhost:3000/meditativeWritings",
+    apiUrl :"https://meditative-wings-backend-seven.vercel.app/meditativeWritings"
   },
   5: {
     title: "LIFE UNDERSTANDING MOVIE/FILM",
     description: "Films that offer profound insights into the human experience",
     color: "from-cyan-500 to-blue-600",
-    backend_api : "http://localhost:3000/lifeUnderstanding"
+    backend_api : "http://localhost:3000/lifeUnderstanding",
+    apiUrl :"https://meditative-wings-backend-seven.vercel.app/lifeUnderstanding"
   },
   6: {
     title: "MEDITATIVE SHAYARI (hindi)",
     description: "Poetic expressions of mindfulness in Hindi",
     color: "from-rose-500 to-pink-600",
-    backend_api : "http://localhost:3000/meditativeShayari"
+    backend_api : "http://localhost:3000/meditativeShayari",
+    apiUrl :"https://meditative-wings-backend-seven.vercel.app/meditativeShayari"
   },
   7: {
     title: "MEDITATIVE SHAYARI MOVIE/FILM",
     description: "Films featuring poetic meditative expressions",
     color: "from-amber-500 to-orange-600",
-    backend_api : "http://localhost:3000/meditativeShayariMovie"
+    backend_api : "http://localhost:3000/meditativeShayariMovie",
+    apiUrl :"https://meditative-wings-backend-seven.vercel.app/meditativeShayariMovie"
   },
   8: {
     title: "MEDITATIVE SHAYARI WRITINGS",
     description: "Written works of meditative poetry and expression",
     color: "from-emerald-500 to-green-600",
-    backend_api : "http://localhost:3000/meditativeShayariWritings"
+    backend_api : "http://localhost:3000/meditativeShayariWritings",
+    apiUrl :"https://meditative-wings-backend-seven.vercel.app/meditativeShayariWritings"
   },
 }
 
@@ -76,7 +85,7 @@ function CategoryPage() {
             <p className="text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">{category.description}</p>
           </div>
         </section>
-
+        <Postnew apiUrl={category.apiUrl} />
         {/* <BlogGrid categoryId={id} /> */}
       </main>
       {/* <Footer /> */}

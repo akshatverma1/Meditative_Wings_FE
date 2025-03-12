@@ -59,10 +59,9 @@ const sampleData = [
     },
 ]
 
-export default function Akshat({ data = sampleData, title = "Featured Meditations" }) {
+export default function Akshat({ data = sampleData, title = "Featured Meditations",apiUrl }) {
     const [videos, setVideos] = useState([])
     const [hoveredId, setHoveredId] = useState(null)
-
     // Simulate fetching data
     useEffect(() => {
         // In a real app, you would fetch data here
@@ -72,7 +71,7 @@ export default function Akshat({ data = sampleData, title = "Featured Meditation
     // Filter featured videos if needed
     const featuredVideos = videos.filter((video) => video.featured)
 
-    let url = "http://localhost:3000/meditativeKnowledge";
+    let url = apiUrl;
     const [apidata, apisetData] = useState([]);
 
     useEffect(() => {
@@ -90,7 +89,7 @@ export default function Akshat({ data = sampleData, title = "Featured Meditation
     }, []);
     return (
         <>
-            <Header></Header>
+            {/* <Header></Header> */}
             <section className="py-12 px-4 md:px-6">
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-3xl font-bold mb-8 relative inline-block">
