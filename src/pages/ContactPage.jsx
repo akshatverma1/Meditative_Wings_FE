@@ -59,7 +59,7 @@ function ContactPage() {
               </div>
             </div>
 
-            <div>
+            {/* <div>
               <form action="https://meditative-wings-fe-brown.vercel.app/" method="get"   className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
@@ -92,7 +92,7 @@ function ContactPage() {
 
                 <Button className="w-full md:w-auto">Send Message</Button>
               </form>
-            </div>
+            </div> */}
           </div>
         </section>
       </main>
