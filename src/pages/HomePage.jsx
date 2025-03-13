@@ -61,9 +61,9 @@ function HomePage() {
             </p>
           </section>
 
-          {/* <Akshat />
+          {/* <Akshat /> */}
           <Categories />
-          <BlogGrid /> */}
+          {/* <BlogGrid /> */}
         </main>
         <Footer />
       </div>
