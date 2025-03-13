@@ -22,6 +22,7 @@ function App() {
     <ThemeProvider defaultTheme="dark">
       <div className="dark min-h-screen flex flex-col relative overflow-hidden">
         <Routes>
+        <Route path="*" element={<HomePage />} />
           <Route path="/" element={<HomePage />} />
           <Route path="/post/:id" element={<PostPage />} />
           {/* <Route path="/category" element={<Categories></Categories> } /> */}
