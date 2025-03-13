@@ -3,9 +3,12 @@ import { Footer } from "../components/Footer"
 import { BlogGrid } from "../components/BlogGrid"
 import { Categories } from "../components/Categories"
 import { Stars } from "../components/Stars"
-
+import { BackgroundImage } from "../categories/BackgroundImage.jsx"
+const backgroundImageUrl = "/backgroundimage.svg?height=1080&width=1920"
 function HomePage() {
+  
   return (
+    <BackgroundImage imageUrl={backgroundImageUrl} opacity={0.75}>
     <div className="min-h-screen flex flex-col relative overflow-hidden">
       <Stars />
       <Header />
@@ -24,6 +27,7 @@ function HomePage() {
       </main>
       <Footer />
     </div>
+    </BackgroundImage>
   )
 }
 

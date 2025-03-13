@@ -45,6 +45,12 @@ export function Header() {
             >
               Contact
             </Link>
+            <Link
+              to="/OurTeam"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+            >
+              Our Team
+            </Link>
           </nav>
         )}
 
@@ -69,9 +75,9 @@ export function Header() {
               </Button>
               </Link> */}
               {/* </form> */}
-              <form action="https://www.youtube.com/@MEDITATIVEWINGSWORLD" method="get">
+              {/* <form action="https://www.youtube.com/@MEDITATIVEWINGSWORLD" method="get">
               <Button size="sm">Youtube</Button>
-              </form>
+              </form> */}
             </>
           ) : (
             <Button
@@ -129,6 +135,14 @@ export function Header() {
               >
                 <MessageCircle className="h-4 w-4" />
                 Contact
+              </Link>
+              <Link
+                to="/OurTeam"
+                className="flex items-center gap-2 px-3 py-2 text-muted-foreground hover:text-foreground"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <MessageCircle className="h-4 w-4" />
+                Our Team
               </Link>
               {/* <div className="border-t border-border/40 pt-5 mt-2">
                 <div className="flex gap-3">
