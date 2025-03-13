@@ -16,6 +16,7 @@ import VideoPage from "./components/Videopage.jsx"
 import { VideoShow } from "./components/Videoshow.jsx"
 import { ThemeProvider } from "./components/ThemeProvider"
 import TTT from "./components/ttt.jsx"
+import LockPage from "./categories/Lockpage.jsx"
 function App() {
   return (
     <ThemeProvider defaultTheme="dark">
@@ -36,6 +37,7 @@ function App() {
           {/* <Route path="/Videoshow" element={<VideoPage></VideoPage>}></Route> */}
           <Route path="/Videoshows/:ids" element={<VideoShow></VideoShow>}></Route>
           <Route path="/ttt/:id" element={<TTT></TTT>}></Route>
+          <Route path="/Lock" element={<LockPage></LockPage>}></Route>
         </Routes>
       </div>
     </ThemeProvider>

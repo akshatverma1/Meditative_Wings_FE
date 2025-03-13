@@ -98,7 +98,7 @@ export function Footer() {
               </Link>
             </li>
             <li>
-              <Link to="/newRequestPost" className="text-muted-foreground hover:text-foreground">
+              <Link to="/Lock" className="text-muted-foreground hover:text-foreground">
                 New Post
               </Link>
             </li>

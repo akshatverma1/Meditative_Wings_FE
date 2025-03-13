@@ -45,6 +45,16 @@ module.exports = {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
         },
+        gray: {
+          900: '#111827',
+          800: '#1F2937',
+          700: '#374151',
+          600: '#4B5563',
+        },
+        teal: {
+          600: '#0D9488',
+          700: '#0F766E',
+        }
       },
       borderRadius: {
         lg: "var(--radius)",

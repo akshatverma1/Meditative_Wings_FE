@@ -12,20 +12,6 @@ function VideoPage() {
   const navigate = useNavigate()
 
   // For demo purposes - in a real app, you'd get the total count from your API
-  const totalVideos = 4
-  const currentId = Number.parseInt(id, 10)
-
-  const goToNextVideo = () => {
-    if (currentId < totalVideos) {
-      navigate(`/video/${currentId + 1}`)
-    }
-  }
-
-  const goToPreviousVideo = () => {
-    if (currentId > 1) {
-      navigate(`/video/${currentId - 1}`)
-    }
-  }
 
   return (
     <div className="min-h-screen flex flex-col relative">

@@ -59,7 +59,7 @@ export default function NewPostForm() {
                 <div className="space-y-2">
                     <Label htmlFor="youtubeLink" className="flex items-center gap-2">
                         <Youtube className="h-4 w-4" />
-                        <span>YouTube Link</span>
+                        <span>YouTube Video Id</span>
                     </Label>
                     <Input
                         id="youtubeLink"
