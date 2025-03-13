@@ -6,6 +6,7 @@ import { Button } from "./../components/ui/Button.jsx"
 import { Badge } from "./../components/ui/Badge.jsx"
 import { Header } from "../components/Header.jsx"
 import { Footer } from "../components/Footer.jsx"
+import { useParams ,useNavigate} from "react-router-dom"
 // Sample JSON data - in a real app, this would be fetched from an API
 
 
@@ -59,8 +60,9 @@ const sampleData = [
     },
 ]
 
-export default function Akshat({ data = sampleData, title = "Featured Meditations",apiUrl }) {
+export default function Akshat({ data = sampleData, title = "Featured Meditations", apiUrl }) {
     const [videos, setVideos] = useState([])
+    const navigate = useNavigate();
     const [hoveredId, setHoveredId] = useState(null)
     // Simulate fetching data
     useEffect(() => {
@@ -118,6 +120,8 @@ export default function Akshat({ data = sampleData, title = "Featured Meditation
 
                                     {hoveredId === video.id && (
                                         <div className="absolute inset-0 flex items-center justify-center bg-black/40 transition-opacity duration-300">
+                                            
+                                            <form action="/Videoshow">
                                             <Button
                                                 variant="ghost"
                                                 size="icon"
@@ -126,6 +130,7 @@ export default function Akshat({ data = sampleData, title = "Featured Meditation
                                                 <Play className="h-8 w-8 fill-current" />
                                                 <span className="sr-only">Play video</span>
                                             </Button>
+                                            </form>
                                         </div>
                                     )}
                                 </div>
@@ -135,13 +140,15 @@ export default function Akshat({ data = sampleData, title = "Featured Meditation
                                         {video.videoTitle}
                                     </h3>
                                     <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{video.videoDesp}</p>
+                                    
                                     <Button
                                         className="w-full gap-2 bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90"
-                                        onClick={() => window.open(video.youtubeLink, "_blank")}
+                                        onClick={() => navigate(`/Videoshows/${video._id}`)}
                                     >
-                                        <ExternalLink className="h-4 w-4" />
+    
                                         Watch Now
                                     </Button>
+                                 
                                 </div>
                             </div>
                         ))}

@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route,useParams,useNavigate } from "react-router-dom"
 import HomePage from "./pages/HomePage"
 import PostPage from "./pages/PostPage"
 import CategoryPage from "./pages/CategoryPage"
@@ -13,8 +13,9 @@ import  NewPostForm  from "./categories/NewRequest.jsx"
 import Newpost from "./categories/Postnew.jsx";
 import OurTeam from "./pages/Teampage.jsx";
 import VideoPage from "./components/Videopage.jsx"
+import { VideoShow } from "./components/Videoshow.jsx"
 import { ThemeProvider } from "./components/ThemeProvider"
-
+import TTT from "./components/ttt.jsx"
 function App() {
   return (
     <ThemeProvider defaultTheme="dark">
@@ -32,7 +33,9 @@ function App() {
           <Route path="/newRequestPost" element={<NewPostForm></NewPostForm>}></Route>
           <Route path="/newpost" element={<Newpost></Newpost>}></Route>
           <Route path="/OurTeam" element={<OurTeam></OurTeam>}></Route>
-          <Route path="/Videoshow" element={<VideoPage></VideoPage>}></Route>
+          {/* <Route path="/Videoshow" element={<VideoPage></VideoPage>}></Route> */}
+          <Route path="/Videoshows/:ids" element={<VideoShow></VideoShow>}></Route>
+          <Route path="/ttt/:id" element={<TTT></TTT>}></Route>
         </Routes>
       </div>
     </ThemeProvider>
