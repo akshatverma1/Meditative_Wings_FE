@@ -6,9 +6,9 @@ import { Button } from "../components/ui/Button"
 const teamMembers = [
   {
     id: 1,
-    name: "Akshat Jain",
-    role: "Founder & Lead Developer",
-    image: "/placeholder.svg",
+    name: "Aditya kumar",
+    role: "Founder",
+    image: "founder.svg",
     bio: "Passionate about combining technology with mindfulness to create meaningful experiences.",
     social: {
       twitter: "https://twitter.com/akshat",
@@ -19,9 +19,9 @@ const teamMembers = [
   },
   {
     id: 2,
-    name: "Sarah Chen",
-    role: "Meditation Expert",
-    image: "/placeholder.svg",
+    name: "Ram Chandra Mandal",
+    role: "Co-Founder",
+    image: "/cofounder.svg",
     bio: "Certified meditation instructor with 10+ years of experience in mindfulness practices.",
     social: {
       twitter: "https://twitter.com/sarah",
@@ -31,9 +31,9 @@ const teamMembers = [
   },
   {
     id: 3,
-    name: "Michael Rodriguez",
-    role: "Content Director",
-    image: "/placeholder.svg",
+    name: "Prashant sharma",
+    role: "Social Media Manager",
+    image: "https://drive.google.com/file/d/1VacruaN1rFrPg906Hvz-osYiUfJVkdeT/view",
     bio: "Creating and curating meaningful content that inspires mindful living.",
     social: {
       twitter: "https://twitter.com/michael",
@@ -41,18 +41,7 @@ const teamMembers = [
       email: "michael@example.com",
     },
   },
-  {
-    id: 4,
-    name: "Priya Patel",
-    role: "Community Manager",
-    image: "/placeholder.svg",
-    bio: "Building and nurturing our meditation community with empathy and understanding.",
-    social: {
-      twitter: "https://twitter.com/priya",
-      linkedin: "https://linkedin.com/in/priya",
-      email: "priya@example.com",
-    },
-  },
+  
 ]
 
 export function TeamGrid() {
@@ -65,7 +54,7 @@ export function TeamGrid() {
         >
           <div className="relative aspect-square w-full overflow-hidden">
             <img
-              src={member.image || "/placeholder.svg"}
+              src={member.image}
               alt={member.name}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
             />
@@ -79,7 +68,7 @@ export function TeamGrid() {
 
           <div className="p-4">
             <p className="text-sm text-muted-foreground mb-4">{member.bio}</p>
-
+{/* 
             <div className="flex items-center gap-2">
               {member.social.github && (
                 <Button
@@ -125,7 +114,7 @@ export function TeamGrid() {
                   <span className="sr-only">Email</span>
                 </Button>
               )}
-            </div>
+            </div> */}
           </div>
         </div>
       ))}
