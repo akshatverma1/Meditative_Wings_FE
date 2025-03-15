@@ -3,11 +3,12 @@ import { ArrowRight } from "lucide-react"
 import { Button } from "./ui/Button"
 import Placeholder from "./placeholder.svg"
 import Postnew from "./../categories/Postnew.jsx"
+
 const categories = [
   {
     id: 1,
     title: "MEDITATIVE KNOWLEDGE",
-    description: "Explore ancient and modern wisdom on meditation practices",
+    description: "Ancient sacred knowledge of the universe and the earth civilization",
     image: Placeholder,
     color: "from-purple-600 to-indigo-600",
     apiUrl :"http://localhost:3000/meditativeKnowledge"
@@ -15,7 +16,7 @@ const categories = [
   {
     id: 2,
     title: "MEDITATIVE THOUGHTS/IDEAS",
-    description: "Insights and reflections to inspire your meditation journey",
+    description: "Ancient hidden secrets to inspire Life Journey",
     image: Placeholder,
     color: "from-pink-500 to-purple-600",
     apiUrl :"http://localhost:3000/meditativeKnowledge"
@@ -23,7 +24,7 @@ const categories = [
   {
     id: 3,
     title: "MEDITATIVE MOVIE/FILM",
-    description: "Films and documentaries that promote mindfulness",
+    description: "Ancient wisdom revealing Life Secrets",
     image: Placeholder,
     color: "from-blue-500 to-indigo-600",
     apiUrl :"http://localhost:3000/meditativeKnowledge"
@@ -31,7 +32,7 @@ const categories = [
   {
     id: 4,
     title: "MEDITATIVE WRITINGS",
-    description: "Essays and articles on meditation and mindfulness",
+    description: "Ancient wonders on spirituality and mindfulness",
     image: Placeholder,
     color: "from-violet-600 to-purple-600",
     apiUrl :"http://localhost:3000/meditativeKnowledge"
@@ -39,7 +40,7 @@ const categories = [
   {
     id: 5,
     title: "LIFE UNDERSTANDING MOVIE/FILM",
-    description: "Films that offer profound insights into the human experience",
+    description: "Understandings offering deep insights into human experiences",
     image: Placeholder,
     color: "from-cyan-500 to-blue-600",
     apiUrl :"http://localhost:3000/meditativeKnowledge"
@@ -47,7 +48,7 @@ const categories = [
   {
     id: 6,
     title: "MEDITATIVE SHAYARI (hindi)",
-    description: "Poetic expressions of mindfulness in Hindi",
+    description: "Ode expressing divinity, love and life",
     image: Placeholder,
     color: "from-rose-500 to-pink-600",
     apiUrl :"http://localhost:3000/meditativeKnowledge"
@@ -55,7 +56,7 @@ const categories = [
   {
     id: 7,
     title: "MEDITATIVE SHAYARI MOVIE/FILM",
-    description: "Films featuring poetic meditative expressions",
+    description: "Ode expressing divine consciousness,Silence and Nothingness",
     image: Placeholder,
     color: "from-amber-500 to-orange-600",
     apiUrl :"http://localhost:3000/meditativeKnowledge"
@@ -63,7 +64,15 @@ const categories = [
   {
     id: 8,
     title: "MEDITATIVE SHAYARI WRITINGS",
-    description: "Written works of meditative poetry and expression",
+    description: "ode expressing God and Love.",
+    image: Placeholder,
+    color: "from-emerald-500 to-green-600",
+    apiUrl :"http://localhost:3000/meditativeKnowledge"
+  },
+  {
+    id: 9,
+    title: "MEDITATIVE WINGS MEDIA",
+    description: "Artists showcasing arts,love and purity",
     image: Placeholder,
     color: "from-emerald-500 to-green-600",
     apiUrl :"http://localhost:3000/meditativeKnowledge"

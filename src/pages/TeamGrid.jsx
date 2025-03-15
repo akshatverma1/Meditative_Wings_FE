@@ -8,8 +8,8 @@ const teamMembers = [
     id: 1,
     name: "Aditya kumar",
     role: "Founder",
-    image: "founder.svg",
-    bio: "Passionate about combining technology with mindfulness to create meaningful experiences.",
+    image: "https://i.pinimg.com/736x/3c/b7/07/3cb7074fcb4f3c33836a9b2c2349de63.jpg",
+    bio: "B.Tech-VIT VELLORE,TAMILNADU Director Meditativewings,Director Meditative IAS Academy,Director Meditativewings Media",
     social: {
       twitter: "https://twitter.com/akshat",
       github: "https://github.com/akshat",
@@ -21,8 +21,8 @@ const teamMembers = [
     id: 2,
     name: "Ram Chandra Mandal",
     role: "Co-Founder",
-    image: "/cofounder.svg",
-    bio: "Certified meditation instructor with 10+ years of experience in mindfulness practices.",
+    image: "https://i.pinimg.com/736x/6e/81/49/6e8149b6c3fb13b1df587b85d3f6f5a7.jpg",
+    bio: "Retired Deputy Director Of Education,Magadh Division,Bihar Government",
     social: {
       twitter: "https://twitter.com/sarah",
       linkedin: "https://linkedin.com/in/sarah",
@@ -33,7 +33,7 @@ const teamMembers = [
     id: 3,
     name: "Prashant sharma",
     role: "Social Media Manager",
-    image: "https://drive.google.com/file/d/1VacruaN1rFrPg906Hvz-osYiUfJVkdeT/view",
+    image: "https://i.pinimg.com/736x/97/f5/ef/97f5ef6ca75431c6a789d060e764fffd.jpg",
     bio: "Creating and curating meaningful content that inspires mindful living.",
     social: {
       twitter: "https://twitter.com/michael",
@@ -46,7 +46,9 @@ const teamMembers = [
 
 export function TeamGrid() {
   return (
+    
     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      
       {teamMembers.map((member) => (
         <div
           key={member.id}
