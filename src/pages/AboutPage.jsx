@@ -9,6 +9,7 @@ const socialMediaData = {
   social_media: {
     Instagram: ["meditativewings", "meditativewings_shayari", "meditativewingsmedia"],
     YouTube: {
+      meditative_wings:"https://youtube.com/@meditativewings?si=5GZ-7JtYGcXBeWQP",
       meditative_wings_infinity: "https://youtube.com/@meditativewingsinfinity?si=b3PxkLVpSw0N72Qh",
       meditative_wings_world: "https://youtube.com/@meditativewingsworld?si=bHkf8Xl0nTJHDWlz",
       meditative_wings_media: "https://youtube.com/@meditativewingsmedia?si=lb1cnozz991e0pPg",
