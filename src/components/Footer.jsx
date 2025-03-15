@@ -102,6 +102,11 @@ export function Footer() {
                 New Post
               </Link>
             </li>
+            <li>
+              <Link to="/TweetLock" className="text-muted-foreground hover:text-foreground">
+                New Tweet
+              </Link>
+            </li>
           </ul>
         </div>
         {/* 

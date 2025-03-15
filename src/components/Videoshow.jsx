@@ -10,7 +10,7 @@ export function VideoShow({ id }) {
     const [video, setVideo] = useState([])
     const { ids } = useParams();
     console.log(ids);
-    let url = `https://meditative-wings-backend.vercel.app/search/${ids}`;
+    let url = `https://meditative-wings-backend-ritk.vercel.app/search/${ids}`;
     useEffect(async () => {
         // Simulate API call to fetch video data
 

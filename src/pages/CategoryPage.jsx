@@ -12,7 +12,7 @@ const categoryData = {
     description: "Ancient sacred knowledge of the universe and the earth civilization",
     color: "from-purple-600 to-indigo-600",
     backend_api : "http://localhost:3000/meditativeKnowledge",
-    apiUrl :"https://meditative-wings-backend-seven.vercel.app/meditativeKnowledge"
+    apiUrl :"https://meditative-wings-backend-ritk.vercel.app/meditativeKnowledge"
   },
   2: {
     title: "MEDITATIVE THOUGHTS/IDEAS",

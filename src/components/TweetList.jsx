@@ -1,6 +1,7 @@
 import { Badge } from "./ui/Badge"
 import { Card } from "./ui/card.jsx"
 import { Quote } from "lucide-react"
+import { useState,useEffect } from "react"
 
 // Sample tweet data - in a real app, this would come from an API
 const tweets = [
@@ -37,27 +38,38 @@ const tweets = [
 ]
 
 export function TweetList() {
+    let [datas,setData] = useState([]);
+    let url = "https://meditative-wings-backend-ritk.vercel.app/tweetdata";
+    const apicalling = async ()=>{
+        console.log("Api Calling...");
+        useEffect( async ()=>{
+            let apidata = await fetch(url);
+            let response = await apidata.json();
+            console.log(response);
+            setData(response);
+        },[])
+    }
+    apicalling();
+
   return (
     <div className="space-y-6">
-      {tweets.map((tweet) => (
-        <Card key={tweet.id} className="bg-card/40 border-border/50 backdrop-blur">
+      {datas.map((tweet) => (
+        <Card className="bg-card/40 border-border/50 backdrop-blur">
           <div className="p-6">
             <div className="flex items-start justify-between gap-4">
               <div className="flex-1">
                 <div className="flex items-start gap-4 mb-4">
                   <Quote className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                  <p className="text-lg">{tweet.content}</p>
+                  <p className="text-lg">{tweet.tweetContent}</p>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  {tweet.tags.map((tag, index) => (
-                    <Badge key={index} variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20">
-                      {tag}
+                    <Badge variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20">
+                      {tweet.tweetTags}
                     </Badge>
-                  ))}
                 </div>
               </div>
               <div className="text-right">
-                <p className="font-medium text-sm">~ {tweet.author}</p>
+                <p className="font-medium text-sm">~ {tweet.authorName}</p>
                 {/* <p className="text-xs text-muted-foreground">~ {tweet.author.toLowerCase().replace(/\s+/g, "")}</p> */}
               </div>
             </div>
@@ -67,4 +79,3 @@ export function TweetList() {
     </div>
   )
 }
-
