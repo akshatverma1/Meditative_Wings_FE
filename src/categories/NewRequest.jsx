@@ -89,6 +89,7 @@ export default function NewPostForm() {
                         <option value="Meditative Shayari">Meditative Shayari</option>
                         <option value="Meditative Shayari Movie">Meditative Shayari Movie</option>
                         <option value="Meditative Shayari Writings">Meditative Shayari Writings</option>
+                        <option value="Meditative Wings Media">Meditative Wings Media</option>
                     </select>
                 </div>
 

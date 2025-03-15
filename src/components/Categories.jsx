@@ -15,7 +15,7 @@ const categories = [
   },
   {
     id: 2,
-    title: "MEDITATIVE THOUGHTS/IDEAS",
+    title: "MEDITATIVE THOUGHTS/ IDEAS ",
     description: "Ancient hidden secrets to inspire Life Journey",
     image: Placeholder,
     color: "from-pink-500 to-purple-600",
