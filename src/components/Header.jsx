@@ -51,6 +51,12 @@ export function Header() {
             >
               Our Team
             </Link>
+            <Link
+              to="/tweet"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+            >
+              Tweet
+            </Link>
           </nav>
         )}
 

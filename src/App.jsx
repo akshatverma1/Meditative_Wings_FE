@@ -17,6 +17,7 @@ import { VideoShow } from "./components/Videoshow.jsx"
 import { ThemeProvider } from "./components/ThemeProvider"
 import TTT from "./components/ttt.jsx"
 import LockPage from "./categories/Lockpage.jsx"
+import Tweet from "./components/Tweet.jsx"
 function App() {
   return (
     <ThemeProvider defaultTheme="dark">
@@ -39,6 +40,7 @@ function App() {
           <Route path="/Videoshows/:ids" element={<VideoShow></VideoShow>}></Route>
           <Route path="/ttt/:id" element={<TTT></TTT>}></Route>
           <Route path="/Lock" element={<LockPage></LockPage>}></Route>
+          <Route path="/tweet" element={<Tweet></Tweet>}></Route>
         </Routes>
       </div>
     </ThemeProvider>
