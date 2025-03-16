@@ -32,9 +32,9 @@ const teamMembers = [
   {
     id: 3,
     name: "Prashant sharma",
-    role: "Social Media Manager",
+    role: "",
     image: "https://i.pinimg.com/736x/97/f5/ef/97f5ef6ca75431c6a789d060e764fffd.jpg",
-    bio: "",
+    bio: "Social Media Manager",
     social: {
       twitter: "https://twitter.com/michael",
       linkedin: "https://linkedin.com/in/michael",
