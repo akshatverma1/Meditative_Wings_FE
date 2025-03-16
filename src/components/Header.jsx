@@ -55,7 +55,7 @@ export function Header() {
               to="/tweet"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
             >
-              Tweet
+              Writing
             </Link>
           </nav>
         )}
@@ -149,6 +149,14 @@ export function Header() {
               >
                 <MessageCircle className="h-4 w-4" />
                 Our Team
+              </Link>
+              <Link
+                to="/tweet"
+                className="flex items-center gap-2 px-3 py-2 text-muted-foreground hover:text-foreground"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <MessageCircle className="h-4 w-4" />
+                Writing
               </Link>
               {/* <div className="border-t border-border/40 pt-5 mt-2">
                 <div className="flex gap-3">
