@@ -13,7 +13,7 @@ export default function NewPostForm() {
         <div className="bg-card/40 border border-border/50 backdrop-blur rounded-lg p-6 md:p-8">
 {/* Backend */}
 
-            <form action="https://meditative-wings-backend-final.vercel.app/newRequest" method='post' className="space-y-6">
+            <form action="https://meditative-wings-backend-finaltwo.vercel.app/newRequest" method='post' className="space-y-6">
                 <div className="space-y-2">
                     <Label htmlFor="videoTitle" className="flex items-center gap-2">
                         <FileText className="h-4 w-4" />
