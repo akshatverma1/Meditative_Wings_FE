@@ -14,7 +14,7 @@ function TweetPage() {
             Latest <span className="featured-gradient">Writing</span>
           </h1>
           <p className="text-muted-foreground text-center mb-10">
-          "Ƶ" Breathing Technique and Samurai Iaijutsu & Kendo
+          
           </p>
           <TweetList />
         </section>

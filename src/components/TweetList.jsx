@@ -63,9 +63,9 @@ export function TweetList() {
                   <p className="text-lg">{tweet.tweetContent}</p>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20">
+                    {/* <Badge variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20">
                       {tweet.tweetTags}
-                    </Badge>
+                    </Badge> */}
                 </div>
               </div>
               <div className="text-right">

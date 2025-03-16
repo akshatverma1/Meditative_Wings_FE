@@ -56,8 +56,8 @@ function HomePage() {
             <h1 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">
               Explore <span className="featured-gradient">Meditative</span> Content
             </h1>
-            <h4>The Songs of Silence , God and Love</h4>
-            <p className="text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">Infinite love at the point of Infinity. <br></br>Ancient revealations of the universe, multidimension and the earth civilizations promoting mindfulness and life deeper understanding
+            <h4>The Songs of Silence , God and Love<br></br>Infinite love at the point of Infinity.</h4>
+            <p className="text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">Ancient revealations of the universe, multidimension and the earth civilizations promoting mindfulness and life deeper understanding
             </p>
           </section>
 
