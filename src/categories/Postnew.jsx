@@ -15,7 +15,7 @@ export default function Akshat({ data = sampleData, title = "Featured Meditation
     const navigate = useNavigate();
     const [hoveredId, setHoveredId] = useState(null);
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 6;
+    const itemsPerPage = 8;
     const [apidata, apisetData] = useState([]);
 
     // Pagination calculations
