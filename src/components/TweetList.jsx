@@ -63,15 +63,15 @@ export function TweetList() {
                   <p className="text-lg">{tweet.tweetContent}</p>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                    {/* <Badge variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20">
-                      {tweet.tweetTags}
-                    </Badge> */}
+                    <Badge variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20">
+                      ~ {tweet.authorName}
+                    </Badge>
                 </div>
               </div>
-              <div className="text-right">
+              {/* <div className="text-right">
                 <p className="font-medium text-sm">~ {tweet.authorName}</p>
-                {/* <p className="text-xs text-muted-foreground">~ {tweet.author.toLowerCase().replace(/\s+/g, "")}</p> */}
-              </div>
+                <p className="text-xs text-muted-foreground">~ {tweet.author.toLowerCase().replace(/\s+/g, "")}</p>
+              </div> */}
             </div>
           </div>
         </Card>
