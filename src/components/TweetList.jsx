@@ -39,7 +39,7 @@ const tweets = [
 
 export function TweetList() {
     let [datas,setData] = useState([]);
-    let url = "https://meditative-wings-backend-ritk.vercel.app/tweetdata";
+    let url = "https://meditative-wings-backend-final.vercel.app/tweetdata";
     const apicalling = async ()=>{
         console.log("Api Calling...");
         useEffect( async ()=>{

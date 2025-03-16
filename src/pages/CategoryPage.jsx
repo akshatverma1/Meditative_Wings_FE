@@ -12,63 +12,63 @@ const categoryData = {
     description: "Ancient sacred knowledge of the universe and the earth civilization",
     color: "from-purple-600 to-indigo-600",
     backend_api : "http://localhost:3000/meditativeKnowledge",
-    apiUrl :"https://meditative-wings-backend-ritk.vercel.app/meditativeKnowledge"
+    apiUrl :"https://meditative-wings-backend-final.vercel.app/meditativeKnowledge"
   },
   2: {
     title: "MEDITATIVE THOUGHTS/IDEAS",
     description: "Ancient hidden secrets to inspire Life Journey",
     color: "from-pink-500 to-purple-600",
     backend_api : "http://localhost:3000/meditativeThoughts",
-    apiUrl :"https://meditative-wings-backend-seven.vercel.app/meditativeThoughts"
+    apiUrl :"https://meditative-wings-backend-final.vercel.app/meditativeThoughts"
   },
   3: {
     title: "MEDITATIVE MOVIE/FILM",
     description: "Ancient wisdom revealing Life Secrets",
     color: "from-blue-500 to-indigo-600",
     backend_api : "http://localhost:3000/meditativeMovie",
-    apiUrl :"https://meditative-wings-backend-seven.vercel.app/meditativeMovie"
+    apiUrl :"https://meditative-wings-backend-final.vercel.app/meditativeMovie"
   },
   4: {
     title: "MEDITATIVE WRITINGS",
     description: "Ancient wonders on spirituality and mindfulness",
     color: "from-violet-600 to-purple-600",
     backend_api : "http://localhost:3000/meditativeWritings",
-    apiUrl :"https://meditative-wings-backend-seven.vercel.app/meditativeWritings"
+    apiUrl :"https://meditative-wings-backend-final.vercel.app/meditativeWritings"
   },
   5: {
     title: "LIFE UNDERSTANDING MOVIE/FILM",
     description: "Understandings offering deep insights into human experiences",
     color: "from-cyan-500 to-blue-600",
     backend_api : "http://localhost:3000/lifeUnderstanding",
-    apiUrl :"https://meditative-wings-backend-seven.vercel.app/lifeUnderstanding"
+    apiUrl :"https://meditative-wings-backend-final.vercel.app/lifeUnderstanding"
   },
   6: {
     title: "MEDITATIVE SHAYARI (hindi)",
     description: "Ode expressing divinity, love and life",
     color: "from-rose-500 to-pink-600",
     backend_api : "http://localhost:3000/meditativeShayari",
-    apiUrl :"https://meditative-wings-backend-seven.vercel.app/meditativeShayari"
+    apiUrl :"https://meditative-wings-backend-final.vercel.app/meditativeShayari"
   },
   7: {
     title: "MEDITATIVE SHAYARI MOVIE/FILM",
     description: "Ode expressing divine consciousness,Silence and Nothingness.",
     color: "from-amber-500 to-orange-600",
     backend_api : "http://localhost:3000/meditativeShayariMovie",
-    apiUrl :"https://meditative-wings-backend-seven.vercel.app/meditativeShayariMovie"
+    apiUrl :"https://meditative-wings-backend-final.vercel.app/meditativeShayariMovie"
   },
   8: {
     title: "MEDITATIVE SHAYARI WRITINGS",
     description: "ode expressing God and Love.",
     color: "from-emerald-500 to-green-600",
     backend_api : "http://localhost:3000/meditativeShayariWritings",
-    apiUrl :"https://meditative-wings-backend-seven.vercel.app/meditativeShayariWritings"
+    apiUrl :"https://meditative-wings-backend-final.vercel.app/meditativeShayariWritings"
   },
   9: {
     title: "MEDITATIVE WINGS MEDIA",
     description: "Artists showcasing arts,love and purity",
     color: "from-emerald-500 to-green-600",
     backend_api : "http://localhost:3000/meditativeShayariWritings",
-    apiUrl :"https://meditative-wings-backend-seven.vercel.app/meditativeWingsMedia"
+    apiUrl :"https://meditative-wings-backend-final.vercel.app/meditativeWingsMedia"
   },
 }
 
