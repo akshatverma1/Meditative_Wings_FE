@@ -7,8 +7,8 @@ const teamMembers = [
   {
     id: 1,
     name: "Aditya kumar",
-    role: "Founder",
-    image: "https://i.pinimg.com/736x/3c/b7/07/3cb7074fcb4f3c33836a9b2c2349de63.jpg",
+    role: "",
+    image: "https://i.pinimg.com/474x/1e/11/19/1e11198fe3cc9bdfef3926b5a3c713ec.jpg",
     bio: "B.Tech-VIT VELLORE,TAMILNADU Director Meditativewings,Director Meditative IAS Academy,Director Meditativewings Media",
     social: {
       twitter: "https://twitter.com/akshat",
@@ -20,8 +20,8 @@ const teamMembers = [
   {
     id: 2,
     name: "Ram Chandra Mandal",
-    role: "Co-Founder",
-    image: "https://i.pinimg.com/736x/6e/81/49/6e8149b6c3fb13b1df587b85d3f6f5a7.jpg",
+    role: "",
+    image: "https://i.pinimg.com/736x/4e/0a/c5/4e0ac51d0eacc2626e0f4de2696796b1.jpg",
     bio: "Retired Deputy Director Of Education,Magadh Division,Bihar Government",
     social: {
       twitter: "https://twitter.com/sarah",
@@ -34,7 +34,7 @@ const teamMembers = [
     name: "Prashant sharma",
     role: "Social Media Manager",
     image: "https://i.pinimg.com/736x/97/f5/ef/97f5ef6ca75431c6a789d060e764fffd.jpg",
-    bio: "Creating and curating meaningful content that inspires mindful living.",
+    bio: "",
     social: {
       twitter: "https://twitter.com/michael",
       linkedin: "https://linkedin.com/in/michael",

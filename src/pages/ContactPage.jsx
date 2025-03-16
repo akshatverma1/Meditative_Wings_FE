@@ -21,7 +21,7 @@ function ContactPage() {
             <div>
               <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
               <p className="text-muted-foreground mb-8">
-                Have questions, suggestions, or want to contribute to MeditativeBlogs? We'd love to hear from you. Fill
+                Have questions, suggestions or want to contribute to MeditativeBlogs? We'd love to hear from you. Fill
                 out the form and we'll get back to you as soon as possible.
               </p>
 

@@ -15,7 +15,7 @@ export function Footer() {
             <span className="text-lg font-bold">Meditative Wings</span>
           </Link>
           <p className="text-muted-foreground mb-6">
-            A community dedicated to sharing meditative knowledge,thoughts and creative expressions.
+            A community dedicated for sharing meditative knowledge,thoughts and creative expressions.
           </p>
           <div className="flex gap-4">
             {/* <a href="https://twitter.com" className="text-muted-foreground hover:text-primary">
@@ -59,6 +59,16 @@ export function Footer() {
             <li>
               <Link to="/contact" className="text-muted-foreground hover:text-foreground">
                 Contact
+              </Link>
+            </li>
+            <li>
+              <Link to="/OurTeam" className="text-muted-foreground hover:text-foreground">
+                Our Team
+              </Link>
+            </li>
+            <li>
+              <Link to="/tweet" className="text-muted-foreground hover:text-foreground">
+                Writing
               </Link>
             </li>
             {/* <li>
