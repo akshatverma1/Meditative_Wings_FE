@@ -71,6 +71,11 @@ export function Footer() {
                 Writing
               </Link>
             </li>
+            <li>
+              <Link to="/payment" className="text-muted-foreground hover:text-foreground">
+                Donation
+              </Link>
+            </li>
             {/* <li>
               <Link to="/write" className="text-muted-foreground hover:text-foreground">
                 Write a Post

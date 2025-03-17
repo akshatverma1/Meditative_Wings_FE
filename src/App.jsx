@@ -20,6 +20,7 @@ import LockPage from "./categories/Lockpage.jsx"
 import LockTweetPage from "./categories/TweetLockPage.jsx"
 import Tweet from "./components/Tweet.jsx"
 import Tweetpost from "./categories/Tweetpost.jsx"
+import Payment from "./pages/paymentpage.jsx"
 function App() {
   return (
     <ThemeProvider defaultTheme="dark">
@@ -45,6 +46,7 @@ function App() {
           <Route path="/TweetLock" element={<LockTweetPage></LockTweetPage>}></Route>
           <Route path="/tweet" element={<Tweet></Tweet>}></Route>
           <Route path="/newtweetpost" element={<Tweetpost></Tweetpost>}></Route>
+          <Route path="/payment" element={<Payment></Payment>}></Route>
         </Routes>
       </div>
     </ThemeProvider>

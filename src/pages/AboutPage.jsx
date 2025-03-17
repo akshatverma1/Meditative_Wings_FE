@@ -22,6 +22,9 @@ const socialMediaData = {
       meditative_wings_shayari: "https://www.facebook.com/meditativewingsshayari",
       meditative_wings_media: "https://www.facebook.com/meditativewingsmedia",
     },
+    Snapchat: {
+      meditativewings: "https://www.snapchat.com/add/meditativewings?share_id=VGwySdfxTr0&locale=en-US",
+    }
   },
 }
 
@@ -203,6 +206,41 @@ function AboutPage() {
                             .replace(/\b\w/g, (l) => l.toUpperCase())}
                         </p>
                         <p className="text-sm text-muted-foreground">Like our Facebook page</p>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+              </div>
+               {/* Snapchat Section */}
+               <div className="bg-card/40 border border-border/50 rounded-lg p-6">
+                <h3 className="text-xl font-bold mb-4 flex items-center justify-center gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="h-6 w-6 text-yellow-400"
+                  >
+                    <path d="M12.166 0c-1.336 0-1.9.6-1.9.6l-.038-.047C9.285.218 8.354 0 7.3 0a4.358 4.358 0 0 0-3.98 2.903c-.17.47-.214.93-.214 1.4 0 .79.169 1.523.507 2.258.338.735.845 1.39 1.47 1.978.625.589 1.396 1.055 2.186 1.402.79.347 1.636.564 2.473.652.084.009.169.014.253.017a.75.75 0 0 1 .745.75c0 .413-.334.75-.745.75-.084.003-.169.008-.253.017a8.962 8.962 0 0 1-2.473.652 7.381 7.381 0 0 1-2.186 1.402 6.227 6.227 0 0 1-1.47 1.978 5.095 5.095 0 0 1-.507 2.258c0 .47.044.93.214 1.4A4.358 4.358 0 0 0 7.3 24c1.054 0 1.985-.218 2.928-.553l.038-.047s.564.6 1.9.6c1.336 0 1.9-.6 1.9-.6l.038.047C15.047 23.782 15.978 24 17.032 24a4.358 4.358 0 0 0 3.98-2.903c.17-.47.214-.93.214-1.4 0-.79-.169-1.523-.507-2.258a6.227 6.227 0 0 1-1.47-1.978 7.381 7.381 0 0 1-2.186-1.402 8.962 8.962 0 0 1-2.473-.652c-.084-.009-.169-.014-.253-.017a.75.75 0 0 1-.745-.75c0-.413.334-.75.745-.75.084-.003.169-.008.253-.017a8.962 8.962 0 0 0 2.473-.652 7.381 7.381 0 0 0 2.186-1.402 6.227 6.227 0 0 0 1.47-1.978c.338-.735.507-1.468.507-2.258 0-.47-.044-.93-.214-1.4A4.358 4.358 0 0 0 17.032 0c-1.054 0-1.985.218-2.928.553l-.038.047s-.564-.6-1.9-.6z" />
+                  </svg>
+                  <span>Snapchat</span>
+                </h3>
+                <div className="space-y-3">
+                  {Object.entries(socialMediaData.social_media.Snapchat).map(([name, url], index) => (
+                    <a
+                      key={index}
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 p-3 rounded-md hover:bg-primary/10 transition-colors"
+                    >
+                      <div className="h-10 w-10 rounded-full bg-yellow-400 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="h-5 w-5">
+                          <path d="M12.166 0c-1.336 0-1.9.6-1.9.6l-.038-.047C9.285.218 8.354 0 7.3 0a4.358 4.358 0 0 0-3.98 2.903c-.17.47-.214.93-.214 1.4 0 .79.169 1.523.507 2.258.338.735.845 1.39 1.47 1.978.625.589 1.396 1.055 2.186 1.402.79.347 1.636.564 2.473.652.084.009.169.014.253.017a.75.75 0 0 1 .745.75c0 .413-.334.75-.745.75-.084.003-.169.008-.253.017a8.962 8.962 0 0 1-2.473.652 7.381 7.381 0 0 1-2.186 1.402 6.227 6.227 0 0 1-1.47 1.978 5.095 5.095 0 0 1-.507 2.258c0 .47.044.93.214 1.4A4.358 4.358 0 0 0 7.3 24c1.054 0 1.985-.218 2.928-.553l.038-.047s.564.6 1.9.6c1.336 0 1.9-.6 1.9-.6l.038.047C15.047 23.782 15.978 24 17.032 24a4.358 4.358 0 0 0 3.98-2.903c.17-.47.214-.93.214-1.4 0-.79-.169-1.523-.507-2.258a6.227 6.227 0 0 1-1.47-1.978 7.381 7.381 0 0 1-2.186-1.402 8.962 8.962 0 0 1-2.473-.652c-.084-.009-.169-.014-.253-.017a.75.75 0 0 1-.745-.75c0-.413.334-.75.745-.75.084-.003.169-.008.253-.017a8.962 8.962 0 0 0 2.473-.652 7.381 7.381 0 0 0 2.186-1.402 6.227 6.227 0 0 0 1.47-1.978c.338-.735.507-1.468.507-2.258 0-.47-.044-.93-.214-1.4A4.358 4.358 0 0 0 17.032 0c-1.054 0-1.985.218-2.928.553l-.038.047s-.564-.6-1.9-.6z" />
+                        </svg>
+                      </div>
+                      <div className="text-left">
+                        <p className="font-medium">@{name}</p>
+                        <p className="text-sm text-muted-foreground">Follow us on Snapchat</p>
                       </div>
                     </a>
                   ))}

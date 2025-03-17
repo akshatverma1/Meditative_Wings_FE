@@ -21,8 +21,8 @@ const teamMembers = [
     id: 2,
     name: "Ram Chandra Mandal",
     role: "",
-    image: "https://i.pinimg.com/736x/4e/0a/c5/4e0ac51d0eacc2626e0f4de2696796b1.jpg",
-    bio: "Retired Deputy Director Of Education,Magadh Division,Bihar Government",
+    image: "https://i.pinimg.com/736x/b0/72/1f/b0721f0c1c87e616d729b71d554eca3e.jpg",
+    bio: "Director Meditativewings,Director Meditativeias academy,Retired Deputy Director Of Education,Magadh Division,Bihar Government",
     social: {
       twitter: "https://twitter.com/sarah",
       linkedin: "https://linkedin.com/in/sarah",
