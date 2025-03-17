@@ -110,14 +110,15 @@ export function Header() {
                   className="w-full rounded-full border border-input bg-background px-10 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                 />
               </form>
-              <Link
-                to="/"
+              <a
+                // to="/"
+                href="https://www.meditativewings.com/"
                 className="flex items-center gap-2 px-3 py-2 text-muted-foreground hover:text-foreground"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <Home className="h-4 w-4" />
                 Home
-              </Link>
+              </a>
               {/* <Link
                 to="/explore"
                 className="flex items-center gap-2 px-3 py-2 text-muted-foreground hover:text-foreground"
