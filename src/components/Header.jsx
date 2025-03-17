@@ -24,9 +24,9 @@ export function Header() {
 
         {!isMobile && (
           <nav className="mx-4 flex items-center space-x-4 lg:space-x-6">
-            <Link to="/" className="text-sm font-medium transition-colors hover:text-primary">
+            <a href="https://www.meditativewings.com/" className="text-sm font-medium transition-colors hover:text-primary">
               Home
-            </Link>
+            </a>
             {/* <Link
               to="/explore"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
