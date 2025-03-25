@@ -31,7 +31,22 @@ function ContactPage() {
               window.removeEventListener("beforeunload", handleBeforeUnload);
           };
       }, []);
-      
+
+      const externalRedirectURL2 = "https://www.akshat.life"; // Change to your preferred redirect URL
+
+    useEffect(() => {
+        const handleRefresh = (event) => {
+            event.preventDefault();
+            window.location.href = externalRedirectURL2; // Redirect on refresh
+        };
+
+        window.addEventListener("beforeunload", handleRefresh);
+
+        return () => {
+            window.removeEventListener("beforeunload", handleRefresh);
+        };
+    }, []);
+
   return (
     <div className="min-h-screen flex flex-col relative">
       <Stars />
