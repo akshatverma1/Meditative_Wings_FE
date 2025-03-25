@@ -6,6 +6,8 @@ import { Input } from "../components/ui/Input"
 import { Textarea } from "../components/ui/Textarea"
 import { Mail, Phone, MapPin } from "lucide-react"
 
+import { useEffect } from "react"
+
 function ContactPage() {
 
   const externalRedirectURL = "https://www.akshat.life"; // Change to your desired redirect URL
