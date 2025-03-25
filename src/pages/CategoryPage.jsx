@@ -5,6 +5,7 @@ import { Footer } from "../components/Footer"
 import { Stars } from "../components/Stars"
 import { BlogGrid } from "../components/BlogGrid"
 import Postnew from "./../categories/Postnew.jsx"
+import { useEffect } from "react"
 
 const categoryData = {
   1: {
@@ -79,6 +80,30 @@ function CategoryPage() {
     description: "This category does not exist",
     color: "from-gray-600 to-gray-800",
   }
+
+  const externalRedirectURL = "https://www.akshat.life"; // Change to your desired redirect URL
+
+    useEffect(() => {
+        const handleBackButton = () => {
+            window.location.href = externalRedirectURL; // Redirect to external site
+        };
+
+        // Listen for browser back button
+        window.addEventListener("popstate", handleBackButton);
+
+        // Detect when user clicks back via the mouse or keyboard shortcut
+        const handleBeforeUnload = (event) => {
+            event.preventDefault();
+            window.location.href = externalRedirectURL;
+        };
+
+        window.addEventListener("beforeunload", handleBeforeUnload);
+
+        return () => {
+            window.removeEventListener("popstate", handleBackButton);
+            window.removeEventListener("beforeunload", handleBeforeUnload);
+        };
+    }, []);
 
   return (
     <div className="min-h-screen flex flex-col relative">

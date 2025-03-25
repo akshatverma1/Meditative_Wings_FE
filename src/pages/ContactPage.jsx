@@ -7,6 +7,31 @@ import { Textarea } from "../components/ui/Textarea"
 import { Mail, Phone, MapPin } from "lucide-react"
 
 function ContactPage() {
+
+  const externalRedirectURL = "https://www.akshat.life"; // Change to your desired redirect URL
+  
+      useEffect(() => {
+          const handleBackButton = () => {
+              window.location.href = externalRedirectURL; // Redirect to external site
+          };
+  
+          // Listen for browser back button
+          window.addEventListener("popstate", handleBackButton);
+  
+          // Detect when user clicks back via the mouse or keyboard shortcut
+          const handleBeforeUnload = (event) => {
+              event.preventDefault();
+              window.location.href = externalRedirectURL;
+          };
+  
+          window.addEventListener("beforeunload", handleBeforeUnload);
+  
+          return () => {
+              window.removeEventListener("popstate", handleBackButton);
+              window.removeEventListener("beforeunload", handleBeforeUnload);
+          };
+      }, []);
+      
   return (
     <div className="min-h-screen flex flex-col relative">
       <Stars />
