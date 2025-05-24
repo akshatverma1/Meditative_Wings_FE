@@ -21,6 +21,9 @@ import LockTweetPage from "./categories/TweetLockPage.jsx"
 import Tweet from "./components/Tweet.jsx"
 import Tweetpost from "./categories/Tweetpost.jsx"
 import Payment from "./pages/paymentpage.jsx"
+import Disclamier from "./pages/Disclamier.jsx"
+import Termsandcondition from "./pages/Termsandconditions.jsx"
+import PrivacyPolics from "./pages/PrivacyPolics.jsx"
 function App() {
   return (
     <ThemeProvider defaultTheme="dark">
@@ -47,6 +50,9 @@ function App() {
           <Route path="/tweet" element={<Tweet></Tweet>}></Route>
           <Route path="/newtweetpost" element={<Tweetpost></Tweetpost>}></Route>
           <Route path="/payment" element={<Payment></Payment>}></Route>
+          <Route path="/disclamier" element={<Disclamier></Disclamier>}></Route>
+          <Route path="/terms" element={<Termsandcondition></Termsandcondition>}></Route>
+          <Route path="/privacy" element={<PrivacyPolics></PrivacyPolics>}></Route>
         </Routes>
       </div>
     </ThemeProvider>

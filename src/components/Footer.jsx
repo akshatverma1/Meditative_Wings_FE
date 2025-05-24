@@ -76,6 +76,22 @@ export function Footer() {
                 Donation
               </Link>
             </li>
+            <li>
+              <Link to="/privacy" className="text-muted-foreground hover:text-foreground">
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link to="/terms" className="text-muted-foreground hover:text-foreground">
+                Terms and Conditions
+              </Link>
+            </li>
+            <li>
+              <Link to="/disclamier" className="text-muted-foreground hover:text-foreground">
+                Disclamier
+              </Link>
+            </li>
+            
             {/* <li>
               <Link to="/write" className="text-muted-foreground hover:text-foreground">
                 Write a Post
