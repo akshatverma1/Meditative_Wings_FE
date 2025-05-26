@@ -38,14 +38,6 @@ const categories = [
     apiUrl :"http://localhost:3000/meditativeKnowledge"
   },
   {
-    id: 5,
-    title: "LIFE UNDERSTANDING MOVIE/FILM",
-    description: "Understandings offering deep insights into human experiences",
-    image: Placeholder,
-    color: "from-cyan-500 to-blue-600",
-    apiUrl :"http://localhost:3000/meditativeKnowledge"
-  },
-  {
     id: 6,
     title: "MEDITATIVE SHAYARI (hindi)",
     description: "Ode expressing divinity, love and life",

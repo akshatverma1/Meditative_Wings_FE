@@ -36,6 +36,13 @@ const categoryData = {
     backend_api : "http://localhost:3000/meditativeWritings",
     apiUrl :"https://meditative-wings-backend-three.vercel.app/meditativeWritings"
   },
+  5: {
+    title: "LIFE UNDERSTANDING MOVIE/FILM",
+    description: "Understandings offering deep insights into human experiences",
+    color: "from-cyan-500 to-blue-600",
+    backend_api : "http://localhost:3000/lifeUnderstanding",
+    apiUrl :"https://meditative-wings-backend-three.vercel.app/lifeUnderstanding"
+  },
   6: {
     title: "MEDITATIVE SHAYARI (hindi)",
     description: "Ode expressing divinity, love and life",
