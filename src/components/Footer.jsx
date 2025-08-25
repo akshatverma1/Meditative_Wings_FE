@@ -71,11 +71,11 @@ export function Footer() {
                 Writing
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/payment" className="text-muted-foreground hover:text-foreground">
                 Donation
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to="/privacy" className="text-muted-foreground hover:text-foreground">
                 Privacy Policy
