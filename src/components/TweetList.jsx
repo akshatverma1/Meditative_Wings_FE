@@ -60,7 +60,7 @@ export function TweetList() {
               <div className="flex-1">
                 <div className="flex items-start gap-4 mb-4">
                   <Quote className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                  <p style={{fontSize:"0.8rem"}} className="">{tweet.tweetContent}</p>
+                  <p style={{ fontSize: "0.8rem", whiteSpace: "pre-line" }} className="">{tweet.tweetContent}</p>
                 </div>
                 <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary" className="bg-primary/10 text-primary hover:bg-primary/20">
