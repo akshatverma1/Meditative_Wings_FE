@@ -57,6 +57,12 @@ export function Header() {
             >
               Writing
             </Link>
+            <Link
+              to="/payment"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+            >
+              Donation
+            </Link>
           </nav>
         )}
 
