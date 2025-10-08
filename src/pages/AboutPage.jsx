@@ -3,6 +3,7 @@ import { Footer } from "../components/Footer"
 import { Stars } from "../components/Stars"
 import { Instagram, Youtube, Twitter, Facebook, Send } from "lucide-react"
 import { Button } from "../components/ui/Button"
+import tele_logo from "../pages/Telegram_logo.svg"
 
 // Social media data
 const socialMediaData = {
@@ -223,7 +224,7 @@ function AboutPage() {
               {/* Telegram Section */}
               <div className="bg-card/40 border border-border/50 rounded-lg p-6">
                 <h3 className="text-xl font-bold mb-4 flex items-center justify-center gap-2">
-                  <img src="telegram.png" className="h-6 w-6" alt="Telegram" />
+                  <img src={tele_logo} className="h-6 w-6" alt="Telegram" />
                   <span>Telegram</span>
                 </h3>
                 <div className="space-y-3">
@@ -236,7 +237,7 @@ function AboutPage() {
                       className="flex items-center gap-3 p-3 rounded-md hover:bg-primary/10 transition-colors"
                     >
                       <div className="h-10 w-10 rounded-full bg-blue-500 flex items-center justify-center">
-                        <img src="telegram.png" className="h-5 w-5" alt="Telegram Icon" />
+                        <img src={tele_logo} className="" alt="Telegram Icon" />
                       </div>
                       <div className="text-left">
                         <p className="font-medium">@{name}</p>
