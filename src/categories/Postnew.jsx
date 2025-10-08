@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Play } from "lucide-react";
 import { Button } from "./../components/ui/Button.jsx";
 import { Footer } from "../components/Footer.jsx";
-import { useNavigate } from "react-router-dom";
 
 const sampleData = [
   // ... keep your original sampleData ...
@@ -10,7 +9,6 @@ const sampleData = [
 
 export default function Akshat({ data = sampleData, title = "Featured Meditations", apiUrl }) {
   const [videos, setVideos] = useState([]);
-  const navigate = useNavigate();
   const [hoveredId, setHoveredId] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 8;
@@ -44,19 +42,9 @@ export default function Akshat({ data = sampleData, title = "Featured Meditation
     apiCalling();
   }, [apiUrl]);
 
-  // Scroll to top on page change
   const handlePageChange = (newPage) => {
     setCurrentPage(newPage);
     window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  const featuredVideos = videos.filter((video) => video.featured);
-
-  // Handle middle mouse button click
-  const handleAuxClick = (e, videoId) => {
-    if (e.button === 1) {
-      window.open(`/Videoshows/${videoId}`, "_blank");
-    }
   };
 
   return (
@@ -68,7 +56,6 @@ export default function Akshat({ data = sampleData, title = "Featured Meditation
             <span className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent transform translate-y-2"></span>
           </h2>
 
-          {/* Loader shown while fetching data */}
           {loading ? (
             <div className="flex justify-center items-center h-64">
               <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
@@ -82,20 +69,16 @@ export default function Akshat({ data = sampleData, title = "Featured Meditation
                   onMouseEnter={() => setHoveredId(video._id)}
                   onMouseLeave={() => setHoveredId(null)}
                 >
-                  {/* Clickable thumbnail area */}
-                  <div
-                    className="relative aspect-video w-full overflow-hidden cursor-pointer"
-                    onClick={() => navigate(`/Videoshows/${video._id}`)}
-                    onAuxClick={(e) => handleAuxClick(e, video._id)}
-                  >
+                  {/* Entire thumbnail clickable */}
+                  <a href={`/Videoshows/${video._id}`} target="_blank" rel="noopener noreferrer" className="relative block">
                     <img
                       src={video.thumbnailLink}
                       alt={video.videoTitle}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="w-full h-56 md:h-48 lg:h-48 object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-70"></div>
 
-                    {/* Hover overlay shown only for hovered video */}
+                    {/* Hover overlay Play button */}
                     {hoveredId === video._id && (
                       <div className="absolute inset-0 flex items-center justify-center bg-black/40 transition-opacity duration-300">
                         <Button
@@ -108,7 +91,7 @@ export default function Akshat({ data = sampleData, title = "Featured Meditation
                         </Button>
                       </div>
                     )}
-                  </div>
+                  </a>
 
                   <div className="p-4">
                     <h3 className="font-bold text-lg mb-2 line-clamp-1 group-hover:text-primary transition-colors">
@@ -116,12 +99,14 @@ export default function Akshat({ data = sampleData, title = "Featured Meditation
                     </h3>
                     <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{video.videoDesp}</p>
 
-                    <Button
-                      className="w-full gap-2 bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90"
-                      onClick={() => navigate(`/Videoshows/${video._id}`)}
-                    >
-                      Watch Now
-                    </Button>
+                    {/* Watch Now button clickable */}
+                    <a href={`/Videoshows/${video._id}`} target="_blank" rel="noopener noreferrer">
+                      <Button
+                        className="w-full gap-2 bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90"
+                      >
+                        Watch Now
+                      </Button>
+                    </a>
                   </div>
                 </div>
               ))}
