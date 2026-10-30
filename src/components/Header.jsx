@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Link } from "react-router-dom"
-import { Search, Menu, X, PenTool, Home, BookOpen, Users, MessageCircle } from "lucide-react"
+import { Search, Menu, X, PenTool, Home, BookOpen, Users, MessageCircle, ShoppingBag } from "lucide-react"
 import { Button } from "./ui/Button"
 import { useMediaQuery } from "../hooks/useMediaQuery"
 import Medi_icon from "./../../public/meditative_icon.jpg"
@@ -56,6 +56,12 @@ export function Header() {
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
             >
               Writing
+            </Link>
+            <Link
+              to="/shop"
+              className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+            >
+              Shop
             </Link>
             <Link
               to="/payment"
@@ -164,6 +170,14 @@ export function Header() {
               >
                 <MessageCircle className="h-4 w-4" />
                 Writing
+              </Link>
+              <Link
+                to="/shop"
+                className="flex items-center gap-2 px-3 py-2 text-muted-foreground hover:text-foreground"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <ShoppingBag className="h-4 w-4" />
+                Shop
               </Link>
               {/* <div className="border-t border-border/40 pt-5 mt-2">
                 <div className="flex gap-3">

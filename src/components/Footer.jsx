@@ -56,6 +56,11 @@ export function Footer() {
               </Link>
             </li>
             <li>
+              <Link to="/shop" onClick={handleScrollTop} className="text-muted-foreground hover:text-foreground">
+                Meditative Shop
+              </Link>
+            </li>
+            <li>
               <Link to="/payment" onClick={handleScrollTop} className="text-muted-foreground hover:text-foreground">
                 Donation
               </Link>
@@ -114,6 +119,11 @@ export function Footer() {
             <li>
               <Link to="/TweetLock" onClick={handleScrollTop} className="text-muted-foreground hover:text-foreground">
                 New Tweet
+              </Link>
+            </li>
+            <li>
+              <Link to="/ShopLock" onClick={handleScrollTop} className="text-muted-foreground hover:text-foreground">
+                New Product
               </Link>
             </li>
           </ul>

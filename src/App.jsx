@@ -24,6 +24,9 @@ import Payment from "./pages/paymentpage.jsx"
 import Disclamier from "./pages/Disclamier.jsx"
 import Termsandcondition from "./pages/Termsandconditions.jsx"
 import PrivacyPolics from "./pages/PrivacyPolics.jsx"
+import ShopPage from "./pages/ShopPage.jsx"
+import ShopLockPage from "./categories/ShopLockPage.jsx"
+import NewProductForm from "./categories/ProductPost.jsx"
 function App() {
   return (
     <ThemeProvider defaultTheme="dark">
@@ -53,6 +56,9 @@ function App() {
           <Route path="/disclamier" element={<Disclamier></Disclamier>}></Route>
           <Route path="/terms" element={<Termsandcondition></Termsandcondition>}></Route>
           <Route path="/privacy" element={<PrivacyPolics></PrivacyPolics>}></Route>
+          <Route path="/shop" element={<ShopPage></ShopPage>}></Route>
+          <Route path="/ShopLock" element={<ShopLockPage></ShopLockPage>}></Route>
+          <Route path="/newProductPost" element={<NewProductForm></NewProductForm>}></Route>
         </Routes>
       </div>
     </ThemeProvider>

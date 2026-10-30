@@ -69,6 +69,14 @@ const categories = [
     color: "from-emerald-500 to-green-600",
     apiUrl :"http://localhost:3000/meditativeKnowledge"
   },
+  {
+    id: 10,
+    title: "MEDITATIVE SHOP",
+    description: "Discover mindful essentials for a peaceful and balanced life",
+    image: "/meditative_shop.jpg",
+    color: "from-amber-500 to-indigo-600",
+    link: "/shop",
+  },
 ]
 
 export function Categories() {
@@ -99,7 +107,7 @@ export function Categories() {
               <h3 className="font-bold text-lg mb-2 line-clamp-1">{category.title}</h3>
               <p className="text-muted-foreground text-sm mb-4 line-clamp-2">{category.description}</p>
               <Button variant="outline" size="sm" className="w-full group">
-                <Link to={`/category/${category.id}/`} className="flex items-center justify-center w-full">
+                <Link to={category.link || `/category/${category.id}/`} className="flex items-center justify-center w-full">
                   <span>Open</span>
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Link>
