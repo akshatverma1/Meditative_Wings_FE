@@ -2,7 +2,7 @@ import { Button } from "./../components/ui/Button.jsx"
 import { Input } from "./../components/ui/Input.jsx"
 import { Textarea } from "./../components/ui/Textarea.jsx"
 import { Label } from "./../components/ui/Label.jsx"
-import { FileText, Image, Hash, Send } from "lucide-react"
+import { FileText, Image, Hash, IndianRupee, Send } from "lucide-react"
 
 export default function NewProductForm() {
 
@@ -48,6 +48,22 @@ export default function NewProductForm() {
                         name="productImageLink"
                         type="url"
                         placeholder="Enter the URL for the product image"
+                        required
+                    />
+                </div>
+
+                <div className="space-y-2">
+                    <Label htmlFor="productPrice" className="flex items-center gap-2">
+                        <IndianRupee className="h-4 w-4" />
+                        <span>Product Price (₹)</span>
+                    </Label>
+                    <Input
+                        id="productPrice"
+                        name="productPrice"
+                        type="number"
+                        min="0"
+                        step="0.01"
+                        placeholder="Enter the price in rupees, e.g. 499"
                         required
                     />
                 </div>

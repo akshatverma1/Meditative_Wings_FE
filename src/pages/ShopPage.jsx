@@ -10,13 +10,24 @@ const WHATSAPP_NUMBER = "919597381588"
 
 const PRODUCTS_API = "https://meditative-wings-backend-three.vercel.app/shopProducts"
 
+function formatPrice(price) {
+  const digits = Number.isInteger(Number(price)) ? 0 : 2
+  return `₹${Number(price).toLocaleString("en-IN", { minimumFractionDigits: digits, maximumFractionDigits: 2 })}`
+}
+
+function hasPrice(product) {
+  return product.productPrice !== undefined && product.productPrice !== null
+}
+
 function getWhatsAppLink(product) {
   const message =
     `Namaste Meditative Wings 🙏\n\n` +
     `I would like to order the following product:\n\n` +
     `Product: ${product.productTitle}\n` +
-    `Product Code: ${product.productCode}\n\n` +
-    `Please share the price, availability and delivery details.\n\n` +
+    `Product Code: ${product.productCode}\n` +
+    (hasPrice(product) ? `Price: ${formatPrice(product.productPrice)}\n` : "") +
+    `\n` +
+    `Please share the availability and delivery details.\n\n` +
     `Thank you!`
 
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`
@@ -94,6 +105,12 @@ function ShopPage() {
                     {product.productTitle}
                   </h3>
                   <p className="text-muted-foreground text-sm mb-4 line-clamp-3 flex-1">{product.productDesp}</p>
+
+                  {hasPrice(product) && (
+                    <p className="text-2xl font-bold mb-4">
+                      <span className="featured-gradient">{formatPrice(product.productPrice)}</span>
+                    </p>
+                  )}
 
                   <a href={getWhatsAppLink(product)} target="_blank" rel="noopener noreferrer">
                     <Button className="w-full gap-2 bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90">
