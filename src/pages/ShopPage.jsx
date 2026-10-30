@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
-import { ShoppingBag } from "lucide-react"
+import { ShoppingBag, Images } from "lucide-react"
 import { Header } from "../components/Header"
 import { Footer } from "../components/Footer"
 import { Stars } from "../components/Stars"
 import { Button } from "../components/ui/Button"
+import { ImageLightbox } from "../components/ImageLightbox"
 
 // WhatsApp number that receives orders (country code + number, digits only)
 const WHATSAPP_NUMBER = "919597381588"
@@ -13,6 +14,12 @@ const PRODUCTS_API = "https://meditative-wings-backend-three.vercel.app/shopProd
 function formatPrice(price) {
   const digits = Number.isInteger(Number(price)) ? 0 : 2
   return `₹${Number(price).toLocaleString("en-IN", { minimumFractionDigits: digits, maximumFractionDigits: 2 })}`
+}
+
+// Older products only have productImageLink; newer ones have a productImages list
+function getImages(product) {
+  if (Array.isArray(product.productImages) && product.productImages.length > 0) return product.productImages
+  return product.productImageLink ? [product.productImageLink] : []
 }
 
 function hasPrice(product) {
@@ -36,6 +43,7 @@ function getWhatsAppLink(product) {
 function ShopPage() {
   const [products, setProducts] = useState([])
   const [loading, setLoading] = useState(true)
+  const [lightboxProduct, setLightboxProduct] = useState(null)
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -91,14 +99,25 @@ function ShopPage() {
                 key={product._id}
                 className="group relative bg-card/40 border border-border/50 rounded-lg overflow-hidden backdrop-blur transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1 flex flex-col"
               >
-                <div className="relative aspect-square w-full overflow-hidden">
+                <button
+                  type="button"
+                  onClick={() => setLightboxProduct(product)}
+                  className="relative block aspect-square w-full overflow-hidden cursor-zoom-in"
+                >
                   <img
-                    src={product.productImageLink}
+                    src={getImages(product)[0]}
                     alt={product.productTitle}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                </div>
+                  {getImages(product).length > 1 && (
+                    <span className="absolute bottom-2 right-2 flex items-center gap-1 rounded-full bg-black/60 backdrop-blur px-2 py-1 text-xs text-white">
+                      <Images className="h-3 w-3" />
+                      {getImages(product).length}
+                    </span>
+                  )}
+                  <span className="sr-only">View images of {product.productTitle}</span>
+                </button>
 
                 <div className="p-4 flex flex-col flex-1">
                   <h3 className="font-bold text-lg mb-2 line-clamp-1 group-hover:text-primary transition-colors">
@@ -107,7 +126,7 @@ function ShopPage() {
                   <p className="text-muted-foreground text-sm mb-4 line-clamp-3 flex-1">{product.productDesp}</p>
 
                   {hasPrice(product) && (
-                    <p className="text-2xl font-bold mb-4">
+                    <p className="text-sm font-semibold mb-4">
                       <span className="featured-gradient">{formatPrice(product.productPrice)}</span>
                     </p>
                   )}
@@ -125,6 +144,13 @@ function ShopPage() {
           )}
         </section>
       </main>
+      {lightboxProduct && (
+        <ImageLightbox
+          images={getImages(lightboxProduct)}
+          alt={lightboxProduct.productTitle}
+          onClose={() => setLightboxProduct(null)}
+        />
+      )}
       <Footer />
     </div>
   )
