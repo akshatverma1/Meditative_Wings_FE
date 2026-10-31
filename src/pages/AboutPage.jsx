@@ -16,7 +16,7 @@ const socialMediaData = {
       meditative_wings_media: "https://youtube.com/@meditativewingsmedia?si=lb1cnozz991e0pPg",
     },
     Twitter_X: {
-      meditative_wings: "https://x.com/meditativewings",
+      meditative_wing: "https://x.com/meditativewing",
     },
     Facebook: {
       Aditya_Kumar: "https://www.facebook.com/meditativewings",
